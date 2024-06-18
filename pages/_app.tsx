@@ -1,12 +1,27 @@
+import Navbar from "@/components/layout/Navbar";
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
-import { Sora } from 'next/font/google'
+import { NextPage } from "next";
+import { ComponentType, ReactElement, ReactNode } from "react";
 
-// If loading a variable font, you don't need to specify the font weight
-const sora = Sora({
-  weight: ['400', '700']
-   ,subsets: ['latin'] })
+// import {Sora} from "next/font/google";
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component className={sora.className} {...pageProps} />;
+// const sora = Sora({ subsets: ["latin"] });
+export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
+  getLayout?: (_page: ReactElement, pageProps?: P) => ReactNode;
+  layout?: ComponentType;
+};
+
+interface AppPropsWithLayout extends AppProps {
+  Component: NextPageWithLayout;
+}
+export default function App({ Component, pageProps }: AppPropsWithLayout) {
+  if (Component.getLayout) {
+    return Component.getLayout(<Component {...pageProps} />)
+  }
+  return  (
+  <>
+  <Navbar/>
+  <Component {...pageProps} />
+  </>);
 }
