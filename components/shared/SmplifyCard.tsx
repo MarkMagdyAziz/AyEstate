@@ -13,7 +13,7 @@ function SmplifyCard(props: SimplifyCardProps) {
       <img
         src={props.imagePath}
         alt={props.imageAlt}
-        className={props.imageRounded ? "rounded-sm" : ""}
+        className={props.imageRounded ? "rounded-md" : ""}
       />
       <h4 className="mb-5 mt-6 text-[24px] font-bold leading-[34px]">
         {props.title}

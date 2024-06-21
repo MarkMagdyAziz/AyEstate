@@ -4,7 +4,7 @@ import PercentageBox from "../../shared/PercentageBox";
 
 function Innovative() {
   return (
-    <div className="flex flex-col items-center justify-center bg-black py-[50px] text-white">
+    <section className="flex flex-col items-center justify-center bg-black py-[50px] text-white">
       <div className="w-[335px]">
         <h6 className="mb-3 text-base font-semibold">Innovative</h6>
         <h2 className="text-[32px] font-bold leading-[38px]">
@@ -24,7 +24,7 @@ function Innovative() {
           <PercentageBox title="Client Satisfaction" percentage={30} />
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

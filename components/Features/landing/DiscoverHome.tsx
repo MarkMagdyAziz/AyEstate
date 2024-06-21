@@ -13,7 +13,7 @@ function DiscoverHome() {
           service offers unique selling propositions that set us apart from the
           competition. Find your perfect home today!
         </p>
-        <div className="mb-[48px] mt-6 flex justify-between">
+        <div className="mb-[48px] mt-6 flex gap-4">
           <MainButton title="Explore Now" />
           <button className="rounded-xl border-[1px] border-black bg-transparent px-6 py-3 text-base font-semibold text-black">
             Learn More
