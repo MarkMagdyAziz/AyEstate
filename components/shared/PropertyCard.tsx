@@ -8,7 +8,7 @@ interface PropertyCardProps {
 }
 function PropertyCard(props: PropertyCardProps) {
   return (
-    <div className="mx-6 flex flex-col gap-5">
+    <div className="mx-6 flex max-w-[405px] flex-col gap-5 lg:mx-0">
       <img
         src={props.iconPath}
         className="h-[64px] w-[64px]"
