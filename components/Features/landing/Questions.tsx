@@ -26,7 +26,7 @@ function Questions() {
           <Question title="What should i consider when buying a home?" />
           <Question title="how do i determine the value of my property?" />
         </div>
-        <div className="mt-6 w-full">
+        <div className="mt-6 w-full md:mt-[66px]">
           <MainButton
             title="Give A Quote"
             classes="w-full !font-bold text-[12px] leading-[16px] lg:w-fit"

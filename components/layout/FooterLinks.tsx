@@ -10,7 +10,7 @@ function FooterLinks(props: FooterLinks) {
       <h6 className="text-[16px] font-bold leading-[21px] text-white">
         {props.title}
       </h6>
-      <ul className="mt-4 flex flex-col gap-3 text-[#7F879E]">
+      <ul className="mt-4 flex flex-col gap-3 text-[#7F879E] lg:mt-8">
         {props.links.map((link) => {
           return (
             <Link href="#" key={link}>
