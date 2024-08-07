@@ -3,5 +3,8 @@
     "source.fixAll.eslint": "explicit"
   },
   "editor.formatOnSave": true, // Tell VSCode to format files on save
-  "editor.defaultFormatter": "esbenp.prettier-vscode" // Tell VSCode to use Prettier as default file formatter
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  } // Tell VSCode to use Prettier as default file formatter
 }
