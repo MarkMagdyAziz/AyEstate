@@ -1,16 +1,10 @@
 import React from "react";
-import { Playball, Plus_Jakarta_Sans } from "next/font/google";
-import Link from "next/link";
+import { Playball } from "next/font/google";
 import FooterLinks from "./FooterLinks";
 
 const playPoll = Playball({
   weight: "400",
   subsets: ["latin"],
-});
-
-const plusJakarataSans = Playball({
-  weight: ["400"],
-  subsets: ["vietnamese"],
 });
 
 function Footer() {
