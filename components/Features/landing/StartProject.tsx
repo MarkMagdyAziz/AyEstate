@@ -12,7 +12,8 @@ function StartProject() {
         <p className="text-xs text-[#F4F2FF] md:text-[18px] md:leading-[28px]">
           We deliver immediate business impact and long-term ROI for your brand.
           <br className="hidden md:block" />
-          Find out why Astheris are Australia&apos;s trusted Digital Agency.
+
+          Find out why Astheris are Australia&lsquo;s trusted Digital Agency.
         </p>
         <button className="flex w-full items-center justify-center gap-[10px] rounded-[40px] bg-[#B7E08A] px-6 py-3 text-sm font-semibold text-[#16112F] md:w-fit">
           Start A Project
