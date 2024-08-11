@@ -3,8 +3,8 @@ import SmplifyCard from "../../shared/SmplifyCard";
 
 function Simplify() {
   return (
-    <section className="flex w-full flex-col items-center justify-center py-[50px] text-center md:py-20">
-      <div className="max-w-[335px] md:max-w-[768px]">
+    <div className="flex w-full flex-col items-center justify-center py-[50px] text-center md:py-20">
+      <section className="max-w-[335px] md:max-w-[768px]">
         <h6 className="mb-3 text-base font-semibold">Simplify</h6>
         <h2 className="text-[32px] font-bold leading-[38px] md:text-[48px] md:leading-[58px]">
           Streamline Your Property Buying or Selling Process
@@ -12,9 +12,9 @@ function Simplify() {
         <p className="mt-5 text-base md:text-[18px] md:leading-[27px]">
           Our website provides a step-by-step guide to help you seamlessly
           navigate the process of buying or selling property. From finding the
-          perfect property to closing the deal, we've got you covered.
+          perfect property to closing the deal, we&apos;ve got you covered.
         </p>
-      </div>
+      </section>
       <div className="my-12 grid grid-cols-1 items-baseline justify-center gap-12 sm:grid-cols-2 md:w-full md:px-16 lg:my-20 lg:grid-cols-3">
         <SmplifyCard
           key={1}
@@ -40,7 +40,7 @@ function Simplify() {
           description="Our experts will assist you in negotiating the best terms and ensuring a smooth closing process."
         />
       </div>
-    </section>
+    </div>
   );
 }
 

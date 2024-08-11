@@ -2,6 +2,7 @@ import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
 import { Metadata } from "next";
 import "../styles/globals.css";
+import React from "react";
 
 export const metadata: Metadata = {
   title: "AyEstate Awesome Estates",

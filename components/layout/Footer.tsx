@@ -1,6 +1,5 @@
 import React from "react";
-import { Playball, Plus_Jakarta_Sans } from "next/font/google";
-import Link from "next/link";
+import { Playball } from "next/font/google";
 import FooterLinks from "./FooterLinks";
 
 const playPoll = Playball({
@@ -8,16 +7,11 @@ const playPoll = Playball({
   subsets: ["latin"],
 });
 
-const plusJakarataSans = Playball({
-  weight: ["400"],
-  subsets: ["vietnamese"],
-});
-
 function Footer() {
   return (
     <footer className="bg-[#111111] px-5 py-[50px] lg:pb-8 lg:pe-[172px] lg:ps-[100px] lg:pt-[100px]">
-      <section className="flex flex-col items-center justify-start lg:flex-row lg:items-baseline lg:justify-center xl:gap-[230px]">
-        <div className="flex w-full flex-col text-start">
+      <div className="flex flex-col items-center justify-start lg:flex-row lg:items-baseline lg:justify-center xl:gap-[230px]">
+        <section className="flex w-full flex-col text-start">
           <h2
             className="text-[32px] font-normal leading-[42px] text-white"
             style={playPoll.style}
@@ -34,7 +28,7 @@ function Footer() {
             </span>
           </div>
           <span className="mt-[30px] h-[2px] w-full bg-[#2E334B] pe-5 lg:hidden" />
-        </div>
+        </section>
         <div
           className={`${"grid w-full grid-cols-2 items-start justify-start gap-[107px] lg:min-w-fit lg:grid-cols-4 lg:gap-20"}`}
         >
@@ -54,7 +48,7 @@ function Footer() {
           />
           <FooterLinks links={["Desktop App", "Mobile App"]} title="Platform" />
         </div>
-      </section>
+      </div>
       <h6 className="mt-[31px] text-center text-[18px] leading-[28px] text-[#F3F3F3]">
         Copyright © AyEstate | Designed by AY Studio
       </h6>

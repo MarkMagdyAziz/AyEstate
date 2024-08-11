@@ -4,9 +4,9 @@ import Image from "next/image";
 
 function DiscoverHome() {
   return (
-    <section className="flex w-full justify-center py-[50px] text-center lg:pb-[70px] lg:pt-[30px]">
+    <div className="flex w-full justify-center py-[50px] text-center lg:pb-[70px] lg:pt-[30px]">
       <div className="w-[335px] items-center justify-between lg:flex lg:w-full lg:px-20 lg:text-start">
-        <article className="w-full lg:w-2/4">
+        <section className="w-full lg:w-2/4">
           <h2 className="text-4xl font-bold leading-[43px] lg:text-[56px] lg:leading-[67.2px]">
             Discover Your Dream Home Today
           </h2>
@@ -21,7 +21,7 @@ function DiscoverHome() {
               Learn More
             </button>
           </div>
-        </article>
+        </section>
 
         <Image
           src="/Placeholder Image.png"
@@ -40,7 +40,7 @@ function DiscoverHome() {
           priority
         />
       </div>
-    </section>
+    </div>
   );
 }
 

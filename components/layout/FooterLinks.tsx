@@ -1,10 +1,10 @@
 import React from "react";
 import Link from "next/link";
-interface FooterLinks {
+interface FooterLinksProps {
   links: string[];
   title: string;
 }
-function FooterLinks(props: FooterLinks) {
+function FooterLinks(props: FooterLinksProps) {
   return (
     <div className="mt-[30px] flex flex-col">
       <h6 className="text-[16px] font-bold leading-[21px] text-white">
@@ -13,9 +13,9 @@ function FooterLinks(props: FooterLinks) {
       <ul className="mt-4 flex flex-col gap-3 text-[#7F879E] lg:mt-8">
         {props.links.map((link) => {
           return (
-            <Link href="#" key={link}>
-              {link}
-            </Link>
+            <li key={link}>
+              <Link href="#">{link}</Link>
+            </li>
           );
         })}
       </ul>

@@ -5,8 +5,8 @@ import React from "react";
 
 function FindProperties() {
   return (
-    <section className="flex flex-col items-center justify-center py-[50px] text-center md:mb-[190px] md:px-16 md:pt-20">
-      <div className="w-[335px] md:w-full">
+    <div className="flex flex-col items-center justify-center py-[50px] text-center md:mb-[190px] md:px-16 md:pt-20">
+      <section className="w-[335px] md:w-full">
         <h6 className="text-base font-semibold">Find</h6>
         <h2 className="mt-3 text-[32px] font-bold leading-[38px] md:mt-4 md:text-[48px] md:leading-[58px]">
           Properties
@@ -30,8 +30,8 @@ function FindProperties() {
         <div className="mt-[18px] md:hidden">
           <MainButton title="View All" />
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 }
 
