@@ -4,8 +4,8 @@ import React from "react";
 
 function Questions() {
   return (
-    <section className="flex items-center justify-center py-[50px] text-center lg:py-[100px]">
-      <div className="flex w-[355px] flex-col items-center justify-center lg:w-full">
+    <div className="flex items-center justify-center py-[50px] text-center lg:py-[100px]">
+      <section className="flex w-[355px] flex-col items-center justify-center lg:w-full">
         <p className="mb-5 hidden text-[18px] leading-[24px] text-[#F59A74] lg:block lg:font-semibold">
           FAQ
         </p>
@@ -32,8 +32,8 @@ function Questions() {
             classes="w-full !font-bold text-[12px] leading-[16px] lg:w-fit"
           />
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 }
 

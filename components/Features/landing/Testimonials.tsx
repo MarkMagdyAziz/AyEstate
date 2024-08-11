@@ -3,8 +3,8 @@ import React from "react";
 
 function Testimonials() {
   return (
-    <section className="flex items-center justify-center bg-[#FFEEEE] py-[50px] text-center">
-      <div className="flex w-[355px] flex-col items-center justify-center gap-6 lg:w-[768px] lg:gap-0">
+    <div className="flex items-center justify-center bg-[#FFEEEE] py-[50px] text-center">
+      <section className="flex w-[355px] flex-col items-center justify-center gap-6 lg:w-[768px] lg:gap-0">
         <h2 className="text-[24px] font-bold leading-[29px] lg:text-[48px] lg:leading-[58px]">
           Customer Testimonials
         </h2>
@@ -23,7 +23,7 @@ function Testimonials() {
         </p>
         <div className="flex flex-col items-center justify-center lg:mt-9 lg:flex-row lg:items-end lg:gap-5">
           <Image
-            src="/Avatar Image.svg"
+            src="/Avatar.svg"
             width={56}
             height={56}
             priority
@@ -35,8 +35,8 @@ function Testimonials() {
             <h6 className="text-base font-normal">CEO, ABC Realty</h6>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 }
 
