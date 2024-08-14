@@ -15,7 +15,6 @@
   ],
   "rules": {
     "prettier/prettier": [
-      "warn",
       {
         "endOfLine": "auto"
       }
