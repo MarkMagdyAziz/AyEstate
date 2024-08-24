@@ -1,3 +1,4 @@
+import {IDepartment} from "../interfaces/common";
 
 export const departments: IDepartment[] = [
     {image: "Placeholder Image-0.jpg",title: "Luxury Villa",subTitle: "Oceanfront",price: '$1,000,000'},

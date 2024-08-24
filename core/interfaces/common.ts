@@ -1,4 +1,4 @@
-export interface department {
+export interface IDepartment {
     image: string;
     title: string;
     subTitle: string;

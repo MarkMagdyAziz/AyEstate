@@ -1,5 +1,5 @@
+import {departments} from "@/core/data";
 import {type NextRequest} from "next/server";
-import {departments} from "./data";
 
 export async function GET (request: NextRequest) {
     const searchParams = request.nextUrl.searchParams;

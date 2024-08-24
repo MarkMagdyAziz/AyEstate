@@ -1,5 +1,6 @@
 import FindPropertyCard from "@/components/shared/FindPropertyCard";
 import MainButton from "@/components/shared/MainButton";
+import { IDepartment } from "@/core/interfaces/common";
 import React from "react";
 
 async function FindProperties() {
