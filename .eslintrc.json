@@ -3,7 +3,6 @@
     "next",
     "next/core-web-vitals",
     "eslint:recommended",
-    "prettier",
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended",
     "plugin:jsx-a11y/recommended"
@@ -15,6 +14,7 @@
   ],
   "rules": {
     "prettier/prettier": [
+      "error",
       {
         "endOfLine": "auto"
       }

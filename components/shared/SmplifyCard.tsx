@@ -10,13 +10,15 @@ interface SimplifyCardProps {
 }
 function SmplifyCard(props: SimplifyCardProps) {
   return (
-    <div className="max-[335px] flex flex-col items-center justify-center lg:max-w-[405px]">
+    <div className="flex max-w-[335px] flex-col items-center justify-center lg:max-w-[405px]">
       {/* <img
         src={props.imagePath}
         alt={props.imageAlt}
         className={`md:w-[405px] ${props.imageRounded ? "rounded-md" : ""}`}
       /> */}
-      <div className={`relative h-[198px] w-[320px] md:h-[240px] md:w-[405px]`}>
+      <div
+        className={`relative h-[198px] w-[320px] md:h-[240px] md:w-[340px] lg:w-[405px]`}
+      >
         <Image
           src={props.imagePath}
           alt={props.imageAlt}

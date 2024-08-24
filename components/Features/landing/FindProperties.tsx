@@ -1,13 +1,16 @@
 import FindPropertyCard from "@/components/shared/FindPropertyCard";
 import MainButton from "@/components/shared/MainButton";
-import { IDepartment } from "@/core/interfaces/common";
+import { IDepartment } from "@/app/_core/interfaces/common";
 import React from "react";
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "@/app/_lib/firebaseConfig";
 
 async function FindProperties() {
-  const departmentsResponse = await fetch("http://localhost:3000/departments", {
-    next: { revalidate: 10000 },
-  });
-  const departments: IDepartment[] = await departmentsResponse.json();
+  const querySnapShot = await getDocs(collection(db, "departments"));
+  const departments: IDepartment[] = querySnapShot.docs.map((doc) => ({
+    ...(doc.data() as Omit<IDepartment, "id">), // Explicitly cast data to Department type, omitting the 'id'
+    id: doc.id,
+  }));
 
   return (
     <div className="flex flex-col items-center justify-center py-[50px] text-center md:mb-[190px] md:px-16 md:pt-20">

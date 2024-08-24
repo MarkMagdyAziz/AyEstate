@@ -15,7 +15,6 @@ function DiscoverProperty() {
         </div>
         <p className="mb-12 mt-[20px] text-sm font-normal leading-[27px] lg:w-2/4 lg:text-[18px]">
           At our real estate agency, we offer a range of services to help you
-
           with your property needs. Whether you&lsquo;re looking to buy, sell,
           or get a valuation, our experienced team is here to assist you every
           step of the way.

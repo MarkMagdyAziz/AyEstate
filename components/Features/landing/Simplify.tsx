@@ -12,7 +12,6 @@ function Simplify() {
         <p className="mt-5 text-base md:text-[18px] md:leading-[27px]">
           Our website provides a step-by-step guide to help you seamlessly
           navigate the process of buying or selling property. From finding the
-
           perfect property to closing the deal, we&lsquo;ve got you covered.
         </p>
       </section>
