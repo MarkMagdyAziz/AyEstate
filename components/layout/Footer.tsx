@@ -30,7 +30,7 @@ function Footer() {
           <span className="mt-[30px] h-[2px] w-full bg-[#2E334B] pe-5 lg:hidden" />
         </section>
         <div
-          className={`${"grid w-full grid-cols-2 items-start justify-start gap-[107px] lg:min-w-fit lg:grid-cols-4 lg:gap-20"}`}
+          className={`${"grid w-full grid-cols-2 items-start justify-start lg:min-w-fit lg:grid-cols-4 lg:gap-20"}`}
         >
           <FooterLinks links={["Listings", "About us", "Blog"]} title="Pages" />
           <FooterLinks
@@ -49,7 +49,7 @@ function Footer() {
           <FooterLinks links={["Desktop App", "Mobile App"]} title="Platform" />
         </div>
       </div>
-      <h6 className="mt-[31px] text-center text-[18px] leading-[28px] text-[#F3F3F3]">
+      <h6 className="mt-[31px] hidden text-center text-[18px] leading-[28px] text-[#F3F3F3] lg:block">
         Copyright © AyEstate | Designed by AY Studio
       </h6>
     </footer>

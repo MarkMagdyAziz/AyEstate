@@ -13,9 +13,7 @@ const sora = Sora({ subsets: ["latin"] });
 export default function Home() {
   return (
     <main className={`contianer ${sora.className}`}>
-      <div className="bg-[#F6F3F3]">
-        <DiscoverHome />
-      </div>
+      <DiscoverHome />
       <DiscoverProperty />
       <Simplify />
       <Innovative />

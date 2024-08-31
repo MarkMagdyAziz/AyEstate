@@ -14,9 +14,8 @@ function FindPropertyCard(props: FindPropertyCardProps) {
         <Image
           src={`/properties/${props.backgroundImage}`}
           alt={props.title}
-          layout="fill" // Makes the image take up the entire parent container
-          objectFit="cover" // Ensures the image covers the container without distorting
-          className="md:rounded-xl"
+          fill
+          className="rounded-md object-cover md:rounded-xl" // Updated to use CSS class
           priority={false} // Use high priority only for critical images
           sizes="(max-width: 768px) 155px, 304px" // Adjust sizes for responsive design
         />
@@ -28,7 +27,7 @@ function FindPropertyCard(props: FindPropertyCardProps) {
       <span className="mb-4 mt-2 text-lg font-semibold md:text-[20px] md:leading-[30px]">
         {props.price}
       </span>
-      <button className="rounded-xl border border-app-primary px-5 py-2 text-sm font-semibold md:w-full">
+      <button className="rounded-xl border border-app-primary px-5 py-2 text-sm font-semibold md:w-full lg:border-app-black2">
         View Details
       </button>
     </div>
