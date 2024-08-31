@@ -18,9 +18,10 @@ function StartProject() {
           Start A Project
           <Image
             alt="arrow icon"
-            width={16}
-            height={16}
             src={"/arrow-up-right.svg"}
+            height={0}
+            width={0}
+            className="h-4 w-4"
           />
         </button>
       </section>

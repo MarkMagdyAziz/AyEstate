@@ -1,11 +1,12 @@
 import React from "react";
 import PropertyCard from "../../shared/PropertyCard";
 import MainButton from "../../shared/MainButton";
+import Image from "next/image";
 
 function DiscoverProperty() {
   return (
     <div className="flex w-full flex-col items-center justify-center py-[50px] lg:px-16 lg:py-20">
-      <section className="w-[335px] lg:flex lg:w-full lg:items-baseline lg:justify-between lg:gap-20">
+      <section className="mb-12 w-[335px] lg:flex lg:w-full lg:items-baseline lg:justify-between lg:gap-20">
         <div className="lg:w-2/4">
           <h6 className="mb-3 text-base font-semibold lg:mb-4">Discover</h6>
           <h2 className="text-[32px] font-bold leading-[38px]">
@@ -13,7 +14,7 @@ function DiscoverProperty() {
             Property with Us
           </h2>
         </div>
-        <p className="mb-12 mt-[20px] text-sm font-normal leading-[27px] lg:w-2/4 lg:text-[18px]">
+        <p className="mt-[20px] text-sm font-normal leading-[21px] lg:w-2/4 lg:text-[18px]">
           At our real estate agency, we offer a range of services to help you
           with your property needs. Whether you&lsquo;re looking to buy, sell,
           or get a valuation, our experienced team is here to assist you every
@@ -43,11 +44,17 @@ function DiscoverProperty() {
           description="Get expert advice on real estate investment strategies to maximize your returns."
         />
       </div>
-      <div className="mt-10 flex w-full justify-start gap-6 ps-6 lg:mt-12">
+      <div className="mt-10 flex w-full justify-start gap-6 ps-6 lg:mt-12 lg:ps-0">
         <MainButton title="Learn More" />
         <button className="flex items-center justify-center gap-2 text-[16px] leading-6">
           Contact
-          <img src="/chevron-right.svg" alt="left arrow icon" />
+          <Image
+            src="/chevron-right.svg"
+            width={0}
+            height={0}
+            className="h-auto w-auto"
+            alt="left arrow icon"
+          />
         </button>
       </div>
     </div>

@@ -22,9 +22,9 @@ function SmplifyCard(props: SimplifyCardProps) {
         <Image
           src={props.imagePath}
           alt={props.imageAlt}
-          layout="fill"
-          objectFit="cover"
-          className="rounded-md" // This line is optional
+          fill
+          className="rounded-md object-cover md:rounded-xl" // Updated to use CSS class
+          sizes="(max-width: 768px) 320px, (max-width: 1024px) 340px, 405px"
         />
       </div>
       <h4 className="mb-5 mt-6 text-[24px] font-bold leading-[34px] md:text-[32px] md:leading-[42px]">

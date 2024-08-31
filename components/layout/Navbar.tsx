@@ -2,6 +2,7 @@ import React from "react";
 import { Playball } from "next/font/google";
 import MainButton from "../shared/MainButton";
 import Link from "next/link";
+import Image from "next/image";
 
 const playPoll = Playball({
   weight: "400",
@@ -16,7 +17,7 @@ function Navbar() {
       <h5 className="text-[28px] leading-9" style={playPoll.style}>
         AyEstate
       </h5>
-      <img
+      <Image
         className="lg:hidden"
         width={24}
         height={24}
@@ -26,7 +27,7 @@ function Navbar() {
       <div className="hidden text-[18px] font-semibold leading-[23px] text-[#7F879E] lg:block">
         <ul className="flex gap-[50px]">
           <li>
-            <Link href="#">Home</Link>
+            <Link href="/">Home</Link>
           </li>
           <li>
             <Link href="/Listings">Listings</Link>

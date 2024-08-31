@@ -11,7 +11,12 @@ function Question(props: QuestionProps) {
         <h5 className="w-[237px] text-[14px] font-bold capitalize leading-[18px]">
           {props.title}
         </h5>
-        <Image src={"/minus.svg"} alt="minus icon" width={20} height={20} />
+        <Image
+          src={props.body ? "/minus.svg" : "/add.svg"}
+          alt="minus icon"
+          width={20}
+          height={20}
+        />
       </div>
       {props?.body && (
         <>
@@ -19,7 +24,7 @@ function Question(props: QuestionProps) {
             {props.body}
           </p>
           <div className="mt-[10px]">
-            <button className="text-[16px] font-bold leading-[20px] text-app-primary">
+            <button className="text-[16px] font-bold leading-[20px] text-app-primary lg:text-[#3860E2]">
               Read More
             </button>
           </div>

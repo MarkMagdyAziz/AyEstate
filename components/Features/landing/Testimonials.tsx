@@ -9,11 +9,19 @@ function Testimonials() {
           Customer Testimonials
         </h2>
         <div className="flex gap-1 lg:mt-[50px]">
-          <Image src="/star.svg" width={20} height={19} priority alt="star" />
-          <Image src="/star.svg" width={20} height={19} priority alt="star" />
-          <Image src="/star.svg" width={20} height={19} priority alt="star" />
-          <Image src="/star.svg" width={20} height={19} priority alt="star" />
-          <Image src="/star.svg" width={20} height={19} priority alt="star" />
+          {[1, 2, 3, 4, 5].map((s) => {
+            return (
+              <Image
+                key={s}
+                src="/star.svg"
+                width={0}
+                height={0}
+                priority
+                alt="star"
+                className="h-[20px] w-[20px]"
+              />
+            );
+          })}
         </div>
         <p className="text-xl font-bold lg:mt-[32px] lg:text-[24px] lg:leading-[34px]">
           Our experience with this real estate website design has been nothing
