@@ -7,7 +7,7 @@ interface Props {
 }
 function Breadcrumb({ items }: Props) {
   return (
-    <ul className="flex gap-x-2 text-xs leading-5">
+    <ul className="flex gap-x-2 text-xs leading-5 lg:text-base lg:leading-[26px]">
       {items.map((item, index) => {
         const lastItem = items.length - 1 === index;
 
