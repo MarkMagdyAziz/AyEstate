@@ -5,7 +5,6 @@ import React from "react";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "@/app/_lib/firebaseConfig";
 
-
 async function FindProperties() {
   const querySnapShot = await getDocs(collection(db, "departments"));
   const departments: IDepartment[] = querySnapShot.docs.map((doc) => ({
