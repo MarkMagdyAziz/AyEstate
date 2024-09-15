@@ -9,34 +9,42 @@ function ListingPagination() {
   const pagesCount = Math.ceil(totalItems / itemsPerPage);
   const pagesArray = Array.from({ length: pagesCount }, (_, i) => i + 1);
 
-  const handlePageChange = (pageNumber:number) => {
+  const handlePageChange = (pageNumber: number) => {
     if (pageNumber < 1 || pageNumber > pagesCount) return;
     setCurrentPage(pageNumber);
   };
   return (
-    <div className="flex items-center justify-between  my-14">
+    <div className="my-14 flex items-center justify-between">
       <button
         onClick={() => handlePageChange(currentPage - 1)}
         disabled={currentPage === 1}
         aria-label="Previous page"
       >
-        <Image width={20} height={20} src="/arrow-left.svg" alt="Previous page icon" />
+        <Image
+          width={20}
+          height={20}
+          src="/arrow-left.svg"
+          alt="Previous page icon"
+        />
       </button>
       <div className="flex items-center gap-3">
         {pagesArray.map((p) => {
           return (
             <button
-            aria-label={`Go to page ${p}`}
+              aria-label={`Go to page ${p}`}
               onClick={() => handlePageChange(p)}
               key={p}
               className={`rounded-lg px-[18px] py-[14px] font-semibold leading-[18px] ${currentPage === p ? "bg-app-primary text-[#111111]" : "bg-app-lgrey3 text-app-grey"}`}
             >
-              {p }
+              {p}
             </button>
           );
         })}
         {pagesCount > currentPage && (
-          <button disabled className="rounded-lg bg-app-lgrey3 px-[18px] py-[14px] font-semibold leading-[18px] text-app-grey">
+          <button
+            disabled
+            className="rounded-lg bg-app-lgrey3 px-[18px] py-[14px] font-semibold leading-[18px] text-app-grey"
+          >
             ...
           </button>
         )}
@@ -46,7 +54,12 @@ function ListingPagination() {
         disabled={currentPage === pagesCount}
         aria-label="Next page"
       >
-        <Image width={20} height={20} src="/arrow-right-pagination.svg" alt="Next page icon" />
+        <Image
+          width={20}
+          height={20}
+          src="/arrow-right-pagination.svg"
+          alt="Next page icon"
+        />
       </button>
     </div>
   );

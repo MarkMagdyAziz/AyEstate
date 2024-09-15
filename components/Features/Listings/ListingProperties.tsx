@@ -85,7 +85,7 @@ function ListingProperties({ departments }: Props) {
           <ListingFilters />
         </div>
 
-        <div className="grid flex-grow grid-cols-2 gap-y-4 lg:gap-y-6 lg:mx-auto lg:justify-items-end ">
+        <div className="grid flex-grow grid-cols-2 gap-y-4 lg:mx-auto lg:justify-items-end lg:gap-y-6">
           {departments.map((d) => {
             return <ListingCard key={d.id} department={d} />;
           })}

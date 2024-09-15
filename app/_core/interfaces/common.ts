@@ -4,6 +4,6 @@ export interface IDepartment {
   subTitle: string;
   price: string;
   id: string;
-  leasehold:string
-  location:string
+  leasehold: string;
+  location: string;
 }

@@ -62,14 +62,14 @@ function ListingFilters() {
       <div className="mt-3 flex flex-col gap-y-3">
         <CustomNumber />
         <CustomNumber />
-        <p className="border border-[#E4E9EE] rounded-xl py-[11px] px-[16px] w-fit">
+        <p className="w-fit rounded-xl border border-[#E4E9EE] px-[16px] py-[11px]">
           $0-$5,000
         </p>
-        <p className="border border-[#E4E9EE] rounded-xl py-[11px] px-[16px] w-fit">
-        $5,000 - $50,000
+        <p className="w-fit rounded-xl border border-[#E4E9EE] px-[16px] py-[11px]">
+          $5,000 - $50,000
         </p>
-        <p className="border border-[#E4E9EE] rounded-xl py-[11px] px-[16px] w-fit">
-        &gt; $50,000
+        <p className="w-fit rounded-xl border border-[#E4E9EE] px-[16px] py-[11px]">
+          &gt; $50,000
         </p>
       </div>
     </div>
