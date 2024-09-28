@@ -4,6 +4,7 @@ import { collection, getDocs } from "firebase/firestore";
 import React from "react";
 import { db } from "../_lib/firebaseConfig";
 import { IDepartment } from "../_core/interfaces/common";
+import ListingSorting from "@/components/Features/Listings/ListingSorting";
 
 export const metadata = {
   title: "Listings Page",
@@ -22,13 +23,16 @@ async function ListingsPage() {
   return (
     <div className="px-6 pt-[18px] lg:px-[120px]">
       <Breadcrumb key={"listings"} items={breadcrumbLinks} />
-      <div className="my-6 w-[256px] lg:mb-[52px] lg:mt-8 lg:w-full">
-        <h2 className="text-base font-semibold leading-[22px] lg:text-2xl lg:leading-[34px]">
-          Showing listings properties for “Villa”
-        </h2>
-        <h6 className="text-xs leading-5 text-app-grey2 lg:text-base lg:leading-[26px]">
-          Showing 1 - 60 Properties
-        </h6>
+      <div className="flex w-full flex-col justify-center lg:flex-row">
+        <div className="my-6 w-[256px] md:w-full lg:mb-[52px] lg:mt-8">
+          <h2 className="text-base font-semibold leading-[22px] lg:text-2xl lg:leading-[34px]">
+            Showing listings properties for “Villa”
+          </h2>
+          <h6 className="text-xs leading-5 text-app-grey2 lg:text-base lg:leading-[26px]">
+            Showing 1 - 60 Properties
+          </h6>
+        </div>
+        <ListingSorting />
       </div>
       <ListingProperties departments={departments} />
     </div>

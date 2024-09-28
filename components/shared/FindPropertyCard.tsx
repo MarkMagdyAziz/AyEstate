@@ -27,7 +27,7 @@ function FindPropertyCard(props: FindPropertyCardProps) {
       <span className="mb-4 mt-2 text-lg font-semibold md:text-[20px] md:leading-[30px]">
         {props.price}
       </span>
-      <button className="rounded-xl border border-app-primary px-5 py-2 text-sm font-semibold md:w-full lg:border-app-black2">
+      <button className="rounded-xl border border-app-primary px-5 py-2 text-sm font-semibold md:w-[304px] lg:border-app-black2">
         View Details
       </button>
     </div>

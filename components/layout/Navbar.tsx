@@ -1,8 +1,10 @@
+"use client";
 import React from "react";
 import { Playball } from "next/font/google";
 import MainButton from "../shared/MainButton";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 const playPoll = Playball({
   weight: "400",
@@ -10,9 +12,10 @@ const playPoll = Playball({
 });
 
 function Navbar() {
+  const path = usePathname();
   return (
     <nav
-      className={`flex w-full items-center justify-between bg-white p-5 lg:bg-[#F6F3F3] lg:px-[100px]`}
+      className={`flex w-full items-center justify-between bg-white p-5 ${path === "/" ? "lg:bg-[#F6F3F3]" : ""} lg:px-[100px]`}
     >
       <h5 className="text-[28px] leading-9" style={playPoll.style}>
         AyEstate
