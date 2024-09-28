@@ -1,5 +1,6 @@
 import { IDepartment } from "@/app/_core/interfaces/common";
 import { db } from "@/app/_lib/firebaseConfig";
+import DepartmentDetail from "@/components/Features/DepartmentDetail";
 import { collection, doc, getDoc, getDocs } from "firebase/firestore";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
@@ -56,12 +57,6 @@ export default async function DepartmentPage({
     id: docSnap.id,
     ...(docSnap.data() as Omit<IDepartment, "id">),
   };
-  const { title: departmentTitle, subTitle: departmentSubtitle } = department;
 
-  return (
-    <>
-      <h1> {departmentTitle} </h1>
-      <p> {departmentSubtitle} </p>
-    </>
-  );
+  return <DepartmentDetail {...department} />;
 }
