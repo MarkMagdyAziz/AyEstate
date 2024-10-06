@@ -9,7 +9,7 @@
   ],
   "plugins": [
     "@typescript-eslint",
-    "prettier",
+    "prettier","prettier",
     "jsx-a11y"
   ],
   "rules": {
