@@ -1,11 +1,11 @@
-import DiscoverHome from "@/components/Features/Landing/DiscoverHome";
-import DiscoverProperty from "@/components/Features/Landing/DiscoverProperty";
-import FindProperties from "@/components/Features/Landing/FindProperties";
-import Innovative from "@/components/Features/Landing/Innovative";
-import Questions from "@/components/Features/Landing/Questions";
-import Simplify from "@/components/Features/Landing/Simplify";
-import StartProject from "@/components/Features/Landing/StartProject";
-import Testimonials from "@/components/Features/Landing/Testimonials";
+import DiscoverHome from "@/components/Features/landing/DiscoverHome";
+import DiscoverProperty from "@/components/Features/landing/DiscoverProperty";
+import FindProperties from "@/components/Features/landing/FindProperties";
+import Innovative from "@/components/Features/landing/Innovative";
+import Questions from "@/components/Features/landing/Questions";
+import Simplify from "@/components/Features/landing/Simplify";
+import StartProject from "@/components/Features/landing/StartProject";
+import Testimonials from "@/components/Features/landing/Testimonials";
 import { Sora } from "next/font/google";
 
 const sora = Sora({ subsets: ["latin"] });
