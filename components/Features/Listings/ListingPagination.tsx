@@ -14,7 +14,7 @@ function ListingPagination() {
     setCurrentPage(pageNumber);
   };
   return (
-    <div className="my-14 flex items-center justify-between">
+    <>
       <button
         onClick={() => handlePageChange(currentPage - 1)}
         disabled={currentPage === 1}
@@ -61,7 +61,7 @@ function ListingPagination() {
           alt="Next page icon"
         />
       </button>
-    </div>
+    </>
   );
 }
 

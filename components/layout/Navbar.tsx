@@ -33,7 +33,7 @@ function Navbar() {
             <Link href="/">Home</Link>
           </li>
           <li>
-            <Link href="/Listings">Listings</Link>
+            <Link href="/listings">Listings</Link>
           </li>
           <li>
             <Link href="#">Company</Link>
@@ -42,7 +42,7 @@ function Navbar() {
             <Link href="#">Blog</Link>
           </li>
           <li>
-            <Link href="#">About Us</Link>
+            <Link href="/about-us">About Us</Link>
           </li>
         </ul>
       </div>
