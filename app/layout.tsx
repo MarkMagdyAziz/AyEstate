@@ -5,7 +5,10 @@ import "../styles/globals.css";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "AyEstate Awesome Estates",
+  title: {
+    default: "AyEstate Awesome Estates",
+    template: "%s - AyEstate Awesome Estates",
+  },
   description: "Come and check our awesome estates!",
 };
 

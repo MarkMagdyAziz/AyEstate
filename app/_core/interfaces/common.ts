@@ -7,3 +7,8 @@ export interface IDepartment {
   leasehold: string;
   location: string;
 }
+export interface IAboutUsCard {
+  image: string;
+  name: string;
+  title: string;
+}
