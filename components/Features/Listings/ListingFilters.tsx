@@ -26,6 +26,7 @@ function ListingFilters() {
           <CustomCheckbox id="b3" name="b1" value="b3" label="Best Seller" />
           <CustomCheckbox id="b3" name="b1" value="b3" label="Discount" />
         </form>
+        <hr className="my-6 mb-6 w-[230px] bg-[#E4E9EE]" />
       </FiltersSectionWrapper>
 
       <FiltersSectionWrapper title="Location">
@@ -38,6 +39,7 @@ function ListingFilters() {
           <CustomCheckbox id="c6" name="c1" value="c6" label="Jogja" />
           <p className="text-base font-medium text-[#1D9E34]">Show All</p>
         </form>
+        <hr className="my-6 mb-6 w-[230px] bg-[#E4E9EE]" />
       </FiltersSectionWrapper>
 
       <FiltersSectionWrapper title="Category">
@@ -51,10 +53,11 @@ function ListingFilters() {
             Show All Categories
           </p>
         </form>
+        <hr className="my-6 mb-6 w-[230px] bg-[#E4E9EE]" />
       </FiltersSectionWrapper>
 
-      <FiltersSectionWrapper title="Best Range" lastItem={true}>
-        <form className="mt-3 flex flex-col gap-y-3">
+      <FiltersSectionWrapper title="Best Range">
+        <div className="mt-3 flex flex-col gap-y-3">
           <CustomNumber />
           <CustomNumber />
           <p className="w-fit rounded-xl border border-[#E4E9EE] px-[16px] py-[11px]">
@@ -66,7 +69,7 @@ function ListingFilters() {
           <p className="w-fit rounded-xl border border-[#E4E9EE] px-[16px] py-[11px]">
             &gt; $50,000
           </p>
-        </form>
+        </div>
       </FiltersSectionWrapper>
     </div>
   );

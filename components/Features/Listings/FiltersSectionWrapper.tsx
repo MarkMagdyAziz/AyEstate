@@ -5,8 +5,7 @@ import React, { useState } from "react";
 export const FiltersSectionWrapper: React.FC<{
   title: string;
   children: React.ReactNode;
-  lastItem?: boolean;
-}> = ({ children, title, lastItem }) => {
+}> = ({ children, title }) => {
   const [isOpen, setIsOpen] = useState(true);
   return (
     <>
@@ -30,7 +29,6 @@ export const FiltersSectionWrapper: React.FC<{
       >
         {children}
       </div>
-      {!lastItem && <hr className="my-6 mb-6 w-[230px] bg-[#E4E9EE]" />}
     </>
   );
 };
