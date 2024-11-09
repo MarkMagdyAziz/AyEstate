@@ -16,7 +16,7 @@ function Questions() {
         <p className="mb-6 text-[14px] leading-[22.4px] text-[#7F879E] lg:mb-[53px]">
           Did you find the question as you expected?
         </p>
-        <div className="grid grid-cols-1 gap-5 lg:grid-cols-2 lg:px-[100px]">
+        <div className="grid w-full grid-cols-1 gap-5 lg:grid-cols-2 lg:px-[100px]">
           <Question
             title="What Types of properties are available on your website?"
             body="Et lectus viverra aenean malesuada praesent. Egestas praesent quam auctor amet ac, ac vel. Euismod proin massa feugiat gravida tellus auctor ac, vitae justo."
