@@ -3,32 +3,22 @@ import Card from "@/components/Features/AboutUs/Card";
 import Header from "@/components/Features/AboutUs/Header";
 import Services from "@/components/Features/AboutUs/Services";
 import StartProject from "@/components/Features/landing/StartProject";
+import { collection, getDocs } from "firebase/firestore";
 import Image from "next/image";
 import React from "react";
+import { db } from "../_lib/firebaseConfig";
+import { IAboutUsCard } from "../_core/interfaces/common";
 
-const CARD_DATA = [
-  {
-    image: "/about-us/Juan-Ordonez.png",
-    name: "Muhammad Abubakar A.",
-    title: "Director",
-  },
-  { image: "/about-us/JamesBarr.png", name: "Alexander Isak", title: "CEO" },
-  { image: "/about-us/Preview.png", name: "Christina W.", title: "CEO" },
-  {
-    image: "/about-us/Juan-Ordonez.png",
-    name: "Muhammad Abubakar A.",
-    title: "Director",
-  },
-  { image: "/about-us/JamesBarr.png", name: "Alexander Isak", title: "CEO" },
-  { image: "/about-us/Preview.png", name: "Christina W.", title: "CEO" },
-  { image: "/about-us/JamesBarr.png", name: "Alexander Isak", title: "CEO" },
-  { image: "/about-us/Preview.png", name: "Christina W.", title: "CEO" },
-];
 export const metadata = {
   title: "About Us",
 };
 
 async function Page() {
+  const querySnapShot = await getDocs(collection(db, "about-us"));
+  const aboutUsCards: IAboutUsCard[] = querySnapShot.docs.map((doc) => ({
+    ...(doc.data() as Omit<IAboutUsCard, "id">), // Explicitly cast data to Department type, omitting the 'id'
+    id: doc.id,
+  }));
   return (
     <div>
       <div className={`relative min-h-[240px] w-full lg:min-h-[500px]`}>
@@ -45,7 +35,7 @@ async function Page() {
         <Services />
         {/*  SECTION CARDS */}
         <div className="grid w-full grid-cols-1 gap-y-5 lg:mb-[178px] lg:mt-[120px] lg:grid-cols-4 lg:gap-8">
-          {CARD_DATA.map((cardItemData) => {
+          {aboutUsCards.map((cardItemData) => {
             return <Card {...cardItemData} key={cardItemData.name} />;
           })}
         </div>

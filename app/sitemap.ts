@@ -11,8 +11,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   }));
 
   const departmentsEntries: MetadataRoute.Sitemap = departments.map(
-    ({ title }) => ({
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/departments/${title}`,
+    ({ id }) => ({
+      url: `${process.env.NEXT_PUBLIC_BASE_URL}/departments/${id}`,
       lastModified: new Date(),
       // changeFrequency:,
       // priority:
