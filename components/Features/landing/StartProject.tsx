@@ -1,3 +1,4 @@
+import MainButton from "@/components/shared/MainButton";
 import Image from "next/image";
 import React from "react";
 
@@ -14,7 +15,7 @@ function StartProject() {
           <br className="hidden md:block" />
           Find out why Astheris are Australia&lsquo;s trusted Digital Agency.
         </p>
-        <button className="flex w-full items-center justify-center gap-[10px] rounded-[40px] bg-[#B7E08A] px-6 py-3 text-sm font-semibold text-[#16112F] md:w-fit">
+        <MainButton className="flex w-full items-center justify-center gap-[10px] rounded-[40px] bg-[#B7E08A] px-6 py-3 text-sm font-semibold text-[#16112F] md:w-fit">
           Start A Project
           <Image
             alt="arrow icon"
@@ -23,7 +24,7 @@ function StartProject() {
             width={0}
             className="h-4 w-4"
           />
-        </button>
+        </MainButton>
       </section>
     </div>
   );

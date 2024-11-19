@@ -23,7 +23,7 @@ function Innovative() {
           </p>
           <MainButton
             title="Learn More"
-            classes="w-fit mt-[36px] !lg:mt-[16px]"
+            className="!lg:mt-[16px] mt-[36px] w-fit"
           />
         </div>
         {/* col-12 */}
