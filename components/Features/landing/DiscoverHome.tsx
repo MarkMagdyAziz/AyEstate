@@ -1,13 +1,19 @@
+"use client";
 import React from "react";
 import MainButton from "../../shared/MainButton";
 import Image from "next/image";
-
+import { motion } from "framer-motion";
 function DiscoverHome() {
   return (
     <div className="bg-[#F6F3F3]">
       <div className="flex w-full justify-center py-[50px] text-center lg:pb-[70px] lg:pt-[30px]">
         <div className="w-[335px] items-center justify-between lg:flex lg:w-full lg:px-20 lg:text-start">
-          <section className="w-full lg:w-2/4">
+          <motion.section
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+            className="w-full lg:w-2/4"
+          >
             <h2 className="text-4xl font-bold leading-[43px] lg:text-[56px] lg:leading-[67.2px]">
               Discover Your Dream Home Today
             </h2>
@@ -22,23 +28,29 @@ function DiscoverHome() {
                 Learn More
               </button>
             </div>
-          </section>
-
-          <Image
-            src="/Placeholder Image.png"
-            alt="placeholder home"
-            className={`block lg:hidden`}
-            width={335}
-            height={348}
-          />
-          <Image
-            src="/large-screen/Placeholder Image.png"
-            alt="placeholder home"
-            className={`hidden lg:block`}
-            width={579}
-            height={500}
-            priority
-          />
+          </motion.section>
+          <motion.div
+            className="hidden lg:block"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.7 }}
+          >
+            <Image
+              src="/Placeholder Image.png"
+              alt="placeholder home"
+              className={`block lg:hidden`}
+              width={335}
+              height={348}
+            />
+            <Image
+              src="/large-screen/Placeholder Image.png"
+              alt="placeholder home"
+              className={`hidden lg:block`}
+              width={579}
+              height={500}
+              priority
+            />
+          </motion.div>
         </div>
       </div>
     </div>

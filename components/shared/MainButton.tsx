@@ -1,19 +1,25 @@
+"use client";
 import React from "react";
 import clsx from "clsx";
+import { motion } from "framer-motion";
+
 interface MainButtonProps {
-  title: string;
-  classes?: string;
+  title?: string;
+  className?: string;
+  children?: React.ReactNode;
 }
 function MainButton(props: MainButtonProps) {
   return (
-    <button
+    <motion.button
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.95 }}
       className={clsx(
         "rounded-xl bg-app-primary px-6 py-3 text-base font-semibold text-black",
-        props.classes,
+        props.className,
       )}
     >
-      {props.title}
-    </button>
+      {props?.title || props?.children}
+    </motion.button>
   );
 }
 

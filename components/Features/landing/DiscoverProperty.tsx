@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import PropertyCard from "../../shared/PropertyCard";
 import MainButton from "../../shared/MainButton";
@@ -5,8 +6,8 @@ import Image from "next/image";
 
 function DiscoverProperty() {
   return (
-    <div className="flex w-full flex-col items-center justify-center py-[50px] lg:px-16 lg:py-20">
-      <section className="mb-12 w-[335px] lg:flex lg:w-full lg:items-baseline lg:justify-between lg:gap-20">
+    <section className="flex w-full flex-col items-center justify-center py-[50px] lg:px-16 lg:py-20">
+      <div className="mb-12 w-[335px] lg:flex lg:w-full lg:items-baseline lg:justify-between lg:gap-20">
         <div className="lg:w-2/4">
           <h6 className="mb-3 text-base font-semibold lg:mb-4">Discover</h6>
           <h2 className="text-[32px] font-bold leading-[38px]">
@@ -20,7 +21,7 @@ function DiscoverProperty() {
           or get a valuation, our experienced team is here to assist you every
           step of the way.
         </p>
-      </section>
+      </div>
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:gap-8 lg:grid-cols-3 lg:gap-12">
         <PropertyCard
           key={1}
@@ -57,7 +58,7 @@ function DiscoverProperty() {
           />
         </button>
       </div>
-    </div>
+    </section>
   );
 }
 

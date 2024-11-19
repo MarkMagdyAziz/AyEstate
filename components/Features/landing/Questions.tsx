@@ -29,7 +29,7 @@ function Questions() {
         <div className="mt-6 w-full md:mt-[66px]">
           <MainButton
             title="Give A Quote"
-            classes="w-full !font-bold text-[12px] leading-[16px] lg:w-fit"
+            className="w-full text-[12px] !font-bold leading-[16px] lg:w-fit"
           />
         </div>
       </section>

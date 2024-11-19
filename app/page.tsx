@@ -7,6 +7,7 @@ import Simplify from "@/components/Features/landing/Simplify";
 import StartProject from "@/components/Features/landing/StartProject";
 import Testimonials from "@/components/Features/landing/Testimonials";
 import { Sora } from "next/font/google";
+import Transition from "./transation";
 
 const sora = Sora({ subsets: ["latin"] });
 
@@ -14,13 +15,29 @@ export default function Home() {
   return (
     <main className={`contianer ${sora.className}`}>
       <DiscoverHome />
-      <DiscoverProperty />
-      <Simplify />
+      <Transition>
+        <DiscoverProperty />
+      </Transition>
+
+      <Transition>
+        <Simplify />
+      </Transition>
+
       <Innovative />
-      <FindProperties />
-      <Testimonials />
+
+      <Transition>
+        <FindProperties />
+      </Transition>
+
+      <Transition>
+        <Testimonials />
+      </Transition>
+
       <Questions />
-      <StartProject />
+
+      <Transition>
+        <StartProject />
+      </Transition>
     </main>
   );
 }

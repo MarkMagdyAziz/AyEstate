@@ -16,7 +16,7 @@ function Achievement() {
         Achievement
       </span>
       <div className="flex w-full flex-col lg:my-[60px] lg:flex-row lg:items-start lg:justify-between lg:gap-x-[80px]">
-        <h3 className="my-4 text-[28px] font-bold leading-[36px] lg:my-0 lg:me-0 lg:me-52 lg:w-[580px] lg:text-[36px] lg:leading-[54px]">
+        <h3 className="my-4 text-[28px] font-bold leading-[36px] lg:my-0 lg:me-52 lg:w-[580px] lg:text-[36px] lg:leading-[54px]">
           OUR AWARD THIS YEAR
         </h3>
         <p className="me-8 text-sm text-[#C7C1EA] lg:ms-20 lg:text-lg">
