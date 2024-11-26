@@ -1,25 +1,17 @@
 import Achievement from "@/components/Features/AboutUs/Achievement/Achievement";
-import Card from "@/components/Features/AboutUs/Card";
 import Header from "@/components/Features/AboutUs/Header";
 import Services from "@/components/Features/AboutUs/Services";
 import StartProject from "@/components/Features/landing/StartProject";
-import { collection, getDocs } from "firebase/firestore";
 import Image from "next/image";
 import React from "react";
-import { db } from "../_lib/firebaseConfig";
-import { IAboutUsCard } from "../_core/interfaces/common";
 import Transition from "../transation";
+import CardsList from "@/components/Features/AboutUs/CardsList";
 
 export const metadata = {
   title: "About Us",
 };
 
 async function Page() {
-  const querySnapShot = await getDocs(collection(db, "about-us"));
-  const aboutUsCards: IAboutUsCard[] = querySnapShot.docs.map((doc) => ({
-    ...(doc.data() as Omit<IAboutUsCard, "id">), // Explicitly cast data to Department type, omitting the 'id'
-    id: doc.id,
-  }));
   return (
     <>
       <Transition>
@@ -41,12 +33,7 @@ async function Page() {
         </Transition>
 
         <Transition>
-          {/*  SECTION CARDS */}
-          <div className="grid w-full grid-cols-1 gap-y-5 lg:mb-[178px] lg:mt-[120px] lg:grid-cols-4 lg:gap-8">
-            {aboutUsCards.map((cardItemData) => {
-              return <Card {...cardItemData} key={cardItemData.name} />;
-            })}
-          </div>
+          <CardsList />
         </Transition>
       </section>
 
