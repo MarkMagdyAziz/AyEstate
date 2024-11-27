@@ -3,10 +3,10 @@ import AchievementFeature from "./AchievementFeature";
 import Image from "next/image";
 
 const ICONS = [
-  "/Facebook-Logo.wine.svg",
-  "/Netflix-Logo.wine.svg",
-  "/YouTube-Logo.wine.svg",
-  "/Google-Logo.wine 1.svg",
+  "Facebook-Logo.wine.svg",
+  "Netflix-Logo.wine.svg",
+  "YouTube-Logo.wine.svg",
+  "Google-Logo.wine 1.svg",
   "Amazon_(company)-Logo.wine.svg",
 ];
 function Achievement() {
@@ -48,13 +48,7 @@ function Achievement() {
       <div className="flex flex-wrap items-center justify-center gap-x-5 lg:mt-6">
         {ICONS.map((icon) => {
           return (
-            <Image
-              key={icon}
-              src={icon}
-              alt="Facebook icon"
-              width={97}
-              height={36}
-            />
+            <Image key={icon} src={icon} alt={icon} width={97} height={36} />
           );
         })}
       </div>

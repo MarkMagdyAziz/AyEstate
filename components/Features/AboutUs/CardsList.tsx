@@ -14,7 +14,9 @@ const CardsList: React.FC = async () => {
   return (
     <div className="grid w-full grid-cols-1 gap-y-5 md:grid-cols-2 lg:mb-[178px] lg:mt-[120px] lg:grid-cols-4 lg:gap-8">
       {aboutUsCards.map((cardItemData) => {
-        return <Card {...cardItemData} key={cardItemData.name} />;
+        return (
+          <Card {...cardItemData} key={cardItemData.name} data-testid="card" />
+        );
       })}
     </div>
   );

@@ -21,9 +21,8 @@ export default function Home() {
 
       <Transition>
         <Simplify />
+        <Innovative />
       </Transition>
-
-      <Innovative />
 
       <Transition>
         <FindProperties />
@@ -31,9 +30,8 @@ export default function Home() {
 
       <Transition>
         <Testimonials />
+        <Questions />
       </Transition>
-
-      <Questions />
 
       <Transition>
         <StartProject />

@@ -27,7 +27,6 @@ function Innovative() {
           />
         </div>
         {/* col-12 */}
-        {/* issue here with lg:flex-row */}
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:col-span-12 lg:w-full lg:grid-cols-3 lg:justify-between lg:gap-0 xl:gap-8">
           <PercentageBox title="Success Rate" percentage={30} />
           <PercentageBox title="Properties Listed" percentage={30} />

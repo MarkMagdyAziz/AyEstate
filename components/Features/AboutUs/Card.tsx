@@ -20,8 +20,12 @@ const Card: React.FC<CardProps> = ({ image, name, title }) => {
           sizes="(max-width: 768px) 320px, (max-width: 1024px) 80px, 80px"
         />
       </div>
-      <h6 className="mt-4 text-base font-bold lg:mt-6">{name}</h6>
-      <p className="mt-2 text-[#534F69] lg:mt-0">{title}</p>
+      <h6 className="mt-4 text-base font-bold lg:mt-6" data-testid="name">
+        {name}
+      </h6>
+      <p className="mt-2 text-[#534F69] lg:mt-0" data-testid="title">
+        {title}
+      </p>
       <p className="mx-4 hidden text-base lg:mt-4 lg:block">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
         varius enim in eros elementum tristique.

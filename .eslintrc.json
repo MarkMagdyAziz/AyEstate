@@ -5,7 +5,9 @@
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended",
-    "plugin:jsx-a11y/recommended"
+    "plugin:jsx-a11y/recommended",
+    "plugin:testing-library/react",
+    "plugin:jest-dom/recommended"
   ],
   "plugins": [
     "@typescript-eslint",
