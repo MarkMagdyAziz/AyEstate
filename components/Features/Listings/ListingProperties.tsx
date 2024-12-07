@@ -2,10 +2,16 @@ import LisitngPagination from "./ListingPagination";
 import { IDepartment } from "@/app/_core/interfaces/common";
 import ListingCard from "./ListingCard";
 import ListingFilters from "./ListingFilters";
-interface Props {
-  departments: IDepartment[];
-}
-function ListingProperties({ departments }: Props) {
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "@/app/_lib/firebaseConfig";
+
+async function ListingProperties() {
+  const querySnapShot = await getDocs(collection(db, "departments"));
+  const departments: IDepartment[] = querySnapShot.docs.map((doc) => ({
+    ...(doc.data() as Omit<IDepartment, "id">), // Explicitly cast data to Department type, omitting the 'id'
+    id: doc.id,
+  }));
+
   return (
     <>
       <div className="flex">

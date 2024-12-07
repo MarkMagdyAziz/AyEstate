@@ -18,10 +18,15 @@ const AchievementFeature: React.FC<AchievementFeatureProps> = ({
           width={36}
           height={36}
         />
-        <h6 className="mb-[12px] mt-[24px] text-xl font-bold leading-[28px] lg:text-[28px] lg:leading-[36px]">
+        <h6
+          data-testid="title"
+          className="mb-[12px] mt-[24px] text-xl font-bold leading-[28px] lg:text-[28px] lg:leading-[36px]"
+        >
           {title}
         </h6>
-        <p className="me-16 text-sm text-[#C7C1EA]">{subTitle}</p>
+        <p data-testid="sub-title" className="me-16 text-sm text-[#C7C1EA]">
+          {subTitle}
+        </p>
       </div>
     </>
   );
