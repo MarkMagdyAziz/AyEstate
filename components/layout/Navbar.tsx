@@ -16,7 +16,7 @@ const navLinks = [
   { href: "/", label: "Home" },
   { href: "/departments", label: "Listings" },
   { href: "#", label: "Company" },
-  { href: "#", label: "Blog" },
+  { href: "/blog", label: "Blog" },
   { href: "/about-us", label: "About Us" },
 ];
 
@@ -70,8 +70,9 @@ function Navbar() {
         initial={{ opacity: 0, y: -10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.3, delay: navLinks.length * 0.1 }}
+        className="hidden lg:block"
       >
-        <MainButton title="Contact Us" className="hidden lg:block" />
+        <MainButton title="Contact Us" />
       </motion.div>
     </motion.nav>
   );
