@@ -15,19 +15,21 @@ const BlogViewArticles: React.FC<Props> = ({ className, paragraph, title }) => {
   return (
     <div
       className={cn(
-        "mb-[30px] mt-[50px] flex items-center justify-center gap-x-20",
+        "mb-[30px] mt-[50px] flex w-full items-center justify-center gap-x-20 lg:mb-[50px] lg:mt-[100px] lg:w-full lg:justify-between",
         className,
       )}
     >
-      <div className="flex flex-col gap-y-2">
-        <h3 className="text-base font-bold leading-[20px] text-[#1B2124]">
+      <div className="flex flex-col gap-y-2 lg:gap-3">
+        <h3 className="text-base font-bold leading-[20px] text-[#1B2124] lg:text-[32px] lg:leading-[41.6px]">
           {title}
         </h3>
-        <p className="text-xs leading-[20px] text-[#7F879E]">{paragraph}</p>
+        <p className="text-xs leading-[20px] text-[#7F879E] lg:text-lg">
+          {paragraph}
+        </p>
       </div>
       <button
         className={cn(
-          "max-h-fit min-w-fit rounded-xl border border-[#B7E08A] bg-transparent px-3 py-[6px] text-sm font-medium text-[#111111]",
+          "max-h-fit min-w-fit rounded-xl border border-[#B7E08A] bg-transparent px-3 py-[6px] text-sm font-medium text-[#111111] lg:border-[#111111] lg:text-lg lg:font-semibold",
           plusJakartaSans.className,
         )}
       >
