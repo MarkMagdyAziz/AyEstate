@@ -43,6 +43,8 @@ function ListingSorting() {
               height={12}
               src="/arrow-down.svg"
               alt="arrow down icon"
+              placeholder="blur"
+              blurDataURL="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zY3JlZW5zY2FwZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3JlZW5zY2FwZSIgdmlld0JveD0iMCAwIDAgMCI+PHBhdGggZD0iTTEyIDBIMFoiLz48L3N2Zz4="
             />
           </div>
         </div>
@@ -51,7 +53,14 @@ function ListingSorting() {
       <div className="flex gap-2">
         <div className="flex items-center justify-center gap-2 lg:hidden">
           <div className="rounded-lg border border-app-grey3 p-[5px]">
-            <Image width={20} height={20} src="/filter.svg" alt="filter icon" />
+            <Image
+              width={20}
+              height={20}
+              src="/filter.svg"
+              alt="filter icon"
+              placeholder="blur"
+              blurDataURL="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zY3JlZW5zY2FwZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3JlZW5zY2FwZSIgdmlld0JveD0iMCAwIDAgMCI+PHBhdGggZD0iTTEyIDBIMFoiLz48L3N2Zz4="
+            />
           </div>
           <span className="h-6 border-r-2 text-amber-50"></span>
         </div>
@@ -61,10 +70,19 @@ function ListingSorting() {
             height={20}
             src="/element-3.svg"
             alt="filter icon"
+            placeholder="blur"
+            blurDataURL="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zY3JlZW5zY2FwZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3JlZW5zY2FwZSIgdmlld0JveD0iMCAwIDAgMCI+PHBhdGggZD0iTTEyIDBIMFoiLz48L3N2Zz4="
           />
         </div>
         <div className="rounded-lg border border-app-grey3 p-[5px]">
-          <Image width={20} height={20} src="/menu.svg" alt="filter icon" />
+          <Image
+            width={20}
+            height={20}
+            src="/menu.svg"
+            alt="filter icon"
+            placeholder="blur"
+            blurDataURL="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zY3JlZW5zY2FwZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3JlZW5zY2FwZSIgdmlld0JveD0iMCAwIDAgMCI+PHBhdGggZD0iTTEyIDBIMFoiLz48L3N2Zz4="
+          />
         </div>
       </div>
     </div>

@@ -12,3 +12,10 @@ export interface IAboutUsCard {
   name: string;
   title: string;
 }
+
+export interface IBlog {
+  date: string;
+  imageSrc: string;
+  title: string;
+  paragraph: string;
+}

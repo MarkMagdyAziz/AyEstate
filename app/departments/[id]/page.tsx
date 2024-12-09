@@ -1,9 +1,14 @@
 import { IDepartment } from "@/app/_core/interfaces/common";
 import { db } from "@/app/_lib/firebaseConfig";
-import DepartmentDetail from "@/components/Features/DepartmentDetail";
 import { collection, doc, getDoc, getDocs } from "firebase/firestore";
 import { Metadata } from "next";
+import dynamic from "next/dynamic";
 import { notFound } from "next/navigation";
+
+// Dynamically import components
+const DepartmentDetail = dynamic(
+  () => import("@/components/Features/DepartmentDetail"),
+);
 
 interface DepartmentPageProps {
   params: { id: string };

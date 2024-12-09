@@ -20,6 +20,8 @@ function FindPropertyCard(props: FindPropertyCardProps) {
           className="rounded-md object-cover md:rounded-xl" // Updated to use CSS class
           priority={false} // Use high priority only for critical images
           sizes="(max-width: 768px) 155px, 304px" // Adjust sizes for responsive design
+          placeholder="blur"
+          blurDataURL="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zY3JlZW5zY2FwZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3JlZW5zY2FwZSIgdmlld0JveD0iMCAwIDAgMCI+PHBhdGggZD0iTTEyIDBIMFoiLz48L3N2Zz4="
         />
       </div>
       <h4 className="mt-4 text-base font-semibold md:text-[18px] md:leading-[27px]">
