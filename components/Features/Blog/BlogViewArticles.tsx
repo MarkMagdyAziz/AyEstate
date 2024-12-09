@@ -47,7 +47,6 @@ const BlogViewArticles: React.FC<Props> = ({
         >
           {paragraph}
         </p>
-
       </div>
       <Link
         href="/blog/recently-articles"
