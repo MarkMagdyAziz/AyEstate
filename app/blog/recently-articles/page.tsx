@@ -1,29 +1,25 @@
+import { IBlog } from "@/app/_core/interfaces/common";
+import { db } from "@/app/_lib/firebaseConfig";
+import { collection, getDocs } from "firebase/firestore";
+import dynamic from "next/dynamic";
 import React from "react";
-import BlogViewArticles from "@/components/Features/Blog/BlogViewArticles";
-import TipCard from "@/components/Features/Blog/TipCard";
-import ListingPagination from "@/components/Features/Listings/ListingPagination";
 
-const cardsData = [
-  {
-    title: "Tips",
-    date: "4 February 2024",
-    imageSrc: "/blog/aa2.png",
-    paragraph: "15 Reasons Why Real Estate is the best investment",
-  },
-  {
-    title: "Success Stories",
-    date: "24 January 2024",
-    imageSrc: "/blog/aa3.png",
-    paragraph: "Renters are still moving-these markets are",
-  },
-  {
-    title: "Invest",
-    date: "21 January 2024",
-    imageSrc: "/blog/aa4.png",
-    paragraph: "Every major u.s. city where it’s more expensive to rent",
-  },
-];
+// Dynamically import components
+const BlogViewArticles = dynamic(
+  () => import("@/components/Features/Blog/BlogViewArticles"),
+);
+const TipCard = dynamic(() => import("@/components/Features/Blog/TipCard"));
+const ListingPagination = dynamic(
+  () => import("@/components/Features/Listings/ListingPagination"),
+);
+
 async function RecentlyArticlesPage() {
+  const cardsQuerySnapShot = await getDocs(collection(db, "blogs-cards"));
+  const cardsData: IBlog[] = cardsQuerySnapShot.docs.map((doc) => ({
+    ...(doc.data() as Omit<IBlog, "id">),
+    id: doc.id,
+  }));
+
   return (
     <div className="mb-[50px] mt-[30px] flex flex-col items-start justify-center px-5 lg:mb-[100px] lg:mt-0 lg:items-center lg:px-[120px]">
       <BlogViewArticles
@@ -37,7 +33,7 @@ async function RecentlyArticlesPage() {
       <section className="grid grid-cols-1 items-stretch gap-y-5 lg:grid-cols-3 lg:gap-x-[30px]">
         {cardsData.map((card, index) => (
           <TipCard
-            key={index} // Use index or a unique ID if available
+            key={index}
             title={card.title}
             date={card.date}
             imageSrc={card.imageSrc}
@@ -46,7 +42,7 @@ async function RecentlyArticlesPage() {
         ))}
         {cardsData.map((card, index) => (
           <TipCard
-            key={index} // Use index or a unique ID if available
+            key={index + cardsData.length}
             title={card.title}
             date={card.date}
             imageSrc={card.imageSrc}
@@ -55,7 +51,7 @@ async function RecentlyArticlesPage() {
         ))}
         {cardsData.map((card, index) => (
           <TipCard
-            key={index} // Use index or a unique ID if available
+            key={index + 2 * cardsData.length}
             title={card.title}
             date={card.date}
             imageSrc={card.imageSrc}

@@ -52,6 +52,8 @@ function DepartmentDetail(department: IDepartment) {
           layout="fill" // Fills the parent container
           objectFit="cover" // Ensures the image covers the container without distortion
           className="rounded-xl"
+          placeholder="blur"
+          blurDataURL="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zY3JlZW5zY2FwZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3JlZW5zY2FwZSIgdmlld0JveD0iMCAwIDAgMCI+PHBhdGggZD0iTTEyIDBIMFoiLz48L3N2Zz4="
         />
       </div>
       <div className="mt-[100px] md:grid md:grid-cols-2 md:gap-x-20">
@@ -90,6 +92,8 @@ function DepartmentDetail(department: IDepartment) {
               layout="fill" // Fills the parent container
               objectFit="cover" // Ensures the image covers the container without distortion
               className="rounded-xl"
+              placeholder="blur"
+              blurDataURL="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zY3JlZW5zY2FwZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3JlZW5zY2FwZSIgdmlld0JveD0iMCAwIDAgMCI+PHBhdGggZD0iTTEyIDBIMFoiLz48L3N2Zz4="
             />
           </div>
           <div className="relative mt-6 h-[335px] w-full overflow-hidden rounded-xl lg:h-[768px]">
@@ -99,6 +103,8 @@ function DepartmentDetail(department: IDepartment) {
               layout="fill" // Fills the parent container
               objectFit="cover" // Ensures the image covers the container without distortion
               className="rounded-xl"
+              placeholder="blur"
+              blurDataURL="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zY3JlZW5zY2FwZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3JlZW5zY2FwZSIgdmlld0JveD0iMCAwIDAgMCI+PHBhdGggZD0iTTEyIDBIMFoiLz48L3N2Zz4="
             />
           </div>
           <div className="relative mt-6 h-[335px] w-full overflow-hidden rounded-xl lg:h-[768px]">
@@ -108,6 +114,8 @@ function DepartmentDetail(department: IDepartment) {
               layout="fill" // Fills the parent container
               objectFit="cover" // Ensures the image covers the container without distortion
               className="rounded-xl"
+              placeholder="blur"
+              blurDataURL="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zY3JlZW5zY2FwZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3JlZW5zY2FwZSIgdmlld0JveD0iMCAwIDAgMCI+PHBhdGggZD0iTTEyIDBIMFoiLz48L3N2Zz4="
             />
           </div>
         </section>
@@ -136,6 +144,8 @@ function DepartmentDetail(department: IDepartment) {
                 height={0}
                 className="h-auto w-auto"
                 alt="left arrow icon"
+                placeholder="blur"
+                blurDataURL="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zY3JlZW5zY2FwZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3JlZW5zY2FwZSIgdmlld0JveD0iMCAwIDAgMCI+PHBhdGggZD0iTTEyIDBIMFoiLz48L3N2Zz4="
               />
             </button>
           </div>
@@ -148,6 +158,8 @@ function DepartmentDetail(department: IDepartment) {
               layout="fill" // Fills the parent container
               objectFit="cover" // Ensures the image covers the container without distortion
               className="rounded-xl"
+              placeholder="blur"
+              blurDataURL="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zY3JlZW5zY2FwZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3JlZW5zY2FwZSIgdmlld0JveD0iMCAwIDAgMCI+PHBhdGggZD0iTTEyIDBIMFoiLz48L3N2Zz4="
             />
           </div>
         </div>

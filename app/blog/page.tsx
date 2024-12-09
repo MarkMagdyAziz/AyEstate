@@ -1,56 +1,35 @@
-import BlogCard from "@/components/Features/Blog/BlogCard";
-import Suggested from "@/components/Features/Blog/Suggested";
-import SearchInput from "@/components/shared/SearchInput";
+import dynamic from "next/dynamic";
 import React from "react";
-import BlogSmallCard from "@/components/Features/Blog/BlogSmallCard";
-import BlogViewArticles from "@/components/Features/Blog/BlogViewArticles";
-import TipCard from "@/components/Features/Blog/TipCard";
 import Transition from "../transation";
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "../_lib/firebaseConfig";
+import { IBlog } from "../_core/interfaces/common";
 
-const blogData = [
-  {
-    date: "9 Sep 2022",
-    paragraph: "The Quick Guide To virtual house flipping",
-    title: "Career Tips",
-    imageSrc: "/blog/virtual-house.png",
-  },
-  {
-    date: "20 January 2024",
-    paragraph: "Expert Home Price Forecasts For 2024 Revised Up",
-    title: "Tips",
-    imageSrc: "/blog/money-house.png",
-  },
-  {
-    date: "15 January 2024",
-    paragraph: "25 Companies Hiring for Remote, Work-From-Home Jobs Right Now",
-    title: "Tips",
-    imageSrc: "/blog/normal-house.png",
-  },
-];
+// Dynamically import components
+const BlogCard = dynamic(() => import("@/components/Features/Blog/BlogCard"));
+const Suggested = dynamic(() => import("@/components/Features/Blog/Suggested"));
+const SearchInput = dynamic(() => import("@/components/shared/SearchInput"));
+const BlogSmallCard = dynamic(
+  () => import("@/components/Features/Blog/BlogSmallCard"),
+);
+const BlogViewArticles = dynamic(
+  () => import("@/components/Features/Blog/BlogViewArticles"),
+);
+const TipCard = dynamic(() => import("@/components/Features/Blog/TipCard"));
 
-const cardsData = [
-  {
-    title: "Tips",
-    date: "4 February 2024",
-    imageSrc: "/blog/aa2.png",
-    paragraph: "15 Reasons Why Real Estate is the best investment",
-  },
-  {
-    title: "Success Stories",
-    date: "24 January 2024",
-    imageSrc: "/blog/aa3.png",
-    paragraph:
-      "Renters are still moving-these markets are where you should be investing",
-  },
-  {
-    title: "Invest",
-    date: "21 January 2024",
-    imageSrc: "/blog/aa4.png",
-    paragraph:
-      "Every major u.s. city where it’s more expensive to rent than buy",
-  },
-];
 async function BlogPage() {
+  const blogQuerySnapShot = await getDocs(collection(db, "blogs"));
+  const blogData: IBlog[] = blogQuerySnapShot.docs.map((doc) => ({
+    ...(doc.data() as Omit<IBlog, "id">),
+    id: doc.id,
+  }));
+
+  const cardsQuerySnapShot = await getDocs(collection(db, "blogs-cards"));
+  const cardsData: IBlog[] = cardsQuerySnapShot.docs.map((doc) => ({
+    ...(doc.data() as Omit<IBlog, "id">),
+    id: doc.id,
+  }));
+
   return (
     <div className="mb-[50px] mt-[30px] flex flex-col items-start justify-center px-5 lg:mb-[224px] lg:items-center lg:px-[120px]">
       <Transition className="flex flex-col items-center justify-center">
@@ -124,7 +103,7 @@ async function BlogPage() {
         <section className=":grid-cols-1 grid gap-y-5 lg:grid-cols-3 lg:gap-x-[30px]">
           {cardsData.map((card, index) => (
             <TipCard
-              key={index} // Use index or a unique ID if available
+              key={index}
               title={card.title}
               date={card.date}
               imageSrc={card.imageSrc}

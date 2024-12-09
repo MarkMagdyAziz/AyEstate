@@ -1,7 +1,16 @@
-import ListingProperties from "@/components/Features/Listings/ListingProperties";
-import Breadcrumb from "@/components/shared/Breadcrumb";
 import React from "react";
-import ListingSorting from "@/components/Features/Listings/ListingSorting";
+import dynamic from "next/dynamic";
+
+// Dynamically import components
+const ListingProperties = dynamic(
+  () => import("@/components/Features/Listings/ListingProperties"),
+);
+
+const ListingSorting = dynamic(
+  () => import("@/components/Features/Listings/ListingSorting"),
+);
+
+const Breadcrumb = dynamic(() => import("@/components/shared/Breadcrumb"));
 
 export const metadata = {
   title: "Listings Page",

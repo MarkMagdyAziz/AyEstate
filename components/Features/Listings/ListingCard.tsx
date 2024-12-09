@@ -15,6 +15,8 @@ function ListingCard({ department }: Props) {
           className="rounded-md object-cover md:rounded-xl"
           priority={false}
           sizes="(max-width: 768px) 156px, 429px"
+          placeholder="blur"
+          blurDataURL="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zY3JlZW5zY2FwZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3JlZW5zY2FwZSIgdmlld0JveD0iMCAwIDAgMCI+PHBhdGggZD0iTTEyIDBIMFoiLz48L3N2Zz4="
         />
         <span className="absolute left-2 top-3 gap-1 rounded-3xl bg-[#111111BF] px-[4px] py-[2px] text-[8px] font-semibold leading-3 text-white lg:left-6 lg:top-4 lg:px-5 lg:py-2 lg:text-sm lg:leading-[22px]">
           Featured
@@ -26,6 +28,8 @@ function ListingCard({ department }: Props) {
             className="h-3 w-3 lg:h-[14px] lg:w-4"
             src="/heart.svg"
             alt="Heart icon"
+            placeholder="blur"
+            blurDataURL="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zY3JlZW5zY2FwZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3JlZW5zY2FwZSIgdmlld0JveD0iMCAwIDAgMCI+PHBhdGggZD0iTTEyIDBIMFoiLz48L3N2Zz4="
           />
         </span>
       </div>
@@ -41,23 +45,58 @@ function ListingCard({ department }: Props) {
       </p>
       <div className="flex flex-wrap items-baseline justify-start gap-1 text-[10px] leading-3 text-app-grey2 lg:gap-[14px] lg:text-sm lg:leading-[18px]">
         <p className="flex items-center justify-center gap-[2px]">
-          <Image width={20} height={20} src="/Frame (1).svg" alt="Heart icon" />
+          <Image
+            width={20}
+            height={20}
+            src="/Frame (1).svg"
+            alt="Heart icon"
+            placeholder="blur"
+            blurDataURL="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zY3JlZW5zY2FwZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3JlZW5zY2FwZSIgdmlld0JveD0iMCAwIDAgMCI+PHBhdGggZD0iTTEyIDBIMFoiLz48L3N2Zz4="
+          />
           4
         </p>
         <p className="flex items-center justify-center gap-1">
-          <Image width={20} height={20} src="/Frame (2).svg" alt="Heart icon" />
+          <Image
+            width={20}
+            height={20}
+            src="/Frame (2).svg"
+            alt="Heart icon"
+            placeholder="blur"
+            blurDataURL="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zY3JlZW5zY2FwZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3JlZW5zY2FwZSIgdmlld0JveD0iMCAwIDAgMCI+PHBhdGggZD0iTTEyIDBIMFoiLz48L3N2Zz4="
+          />
           2
         </p>
         <p className="flex items-center justify-center gap-1">
-          <Image width={20} height={20} src="/Frame (3).svg" alt="Heart icon" />
+          <Image
+            width={20}
+            height={20}
+            src="/Frame (3).svg"
+            alt="Heart icon"
+            placeholder="blur"
+            blurDataURL="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zY3JlZW5zY2FwZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3JlZW5zY2FwZSIgdmlld0JveD0iMCAwIDAgMCI+PHBhdGggZD0iTTEyIDBIMFoiLz48L3N2Zz4="
+          />
           Villa
         </p>
         <p className="flex items-center justify-center gap-1">
-          <Image width={20} height={20} src="/Frame (4).svg" alt="Heart icon" />
+          <Image
+            width={20}
+            height={20}
+            src="/Frame (4).svg"
+            alt="Heart icon"
+            placeholder="blur"
+            blurDataURL="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zY3JlZW5zY2FwZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3JlZW5zY2FwZSIgdmlld0JveD0iMCAwIDAgMCI+PHBhdGggZD0iTTEyIDBIMFoiLz48L3N2Zz4="
+          />
           1400m2
         </p>
         <p className="flex items-center justify-center gap-[2px]">
-          <Image width={20} height={20} src="/Frame (1).svg" alt="Heart icon" />
+          <Image
+            width={20}
+            height={20}
+            src="/Frame (1).svg"
+            alt="Heart icon"
+            placeholder="blur"
+            blurDataURL="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zY3JlZW5zY2FwZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3JlZW5zY2FwZSIgdmlld0JveD0iMCAwIDAgMCI+PHBhdGggZD0iTTEyIDBIMFoiLz48L3N2Zz4="
+          />
           4
         </p>
       </div>
