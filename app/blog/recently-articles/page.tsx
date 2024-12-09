@@ -25,7 +25,7 @@ const cardsData = [
 ];
 async function RecentlyArticlesPage() {
   return (
-    <div className="mb-[50px] mt-[30px] lg:mt-0 flex flex-col items-start justify-center px-5 lg:mb-[100px] lg:items-center lg:px-[120px]">
+    <div className="mb-[50px] mt-[30px] flex flex-col items-start justify-center px-5 lg:mb-[100px] lg:mt-0 lg:items-center lg:px-[120px]">
       <BlogViewArticles
         title="Recently Articles"
         paragraph="Newest update article from AyEstate"
