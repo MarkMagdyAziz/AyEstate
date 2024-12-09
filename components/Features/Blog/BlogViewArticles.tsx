@@ -10,6 +10,7 @@ interface Props {
   paragraph: string;
   buttonClassName?: string;
   paragraphClassName?: string;
+  titleContainerClassName?: string;
 }
 
 const plusJakartaSans = Plus_Jakarta_Sans({ subsets: ["latin"] });
@@ -20,6 +21,7 @@ const BlogViewArticles: React.FC<Props> = ({
   title,
   buttonClassName,
   paragraphClassName,
+  titleContainerClassName,
 }) => {
   return (
     <div
@@ -28,7 +30,12 @@ const BlogViewArticles: React.FC<Props> = ({
         className,
       )}
     >
-      <div className="flex flex-col gap-y-2 lg:gap-3">
+      <div
+        className={cn(
+          "flex flex-col gap-y-2 lg:gap-3",
+          titleContainerClassName,
+        )}
+      >
         <h3 className="text-base font-bold leading-[20px] text-[#1B2124] lg:text-[32px] lg:leading-[41.6px]">
           {title}
         </h3>
@@ -44,7 +51,7 @@ const BlogViewArticles: React.FC<Props> = ({
       <Link
         href="/blog/recently-articles"
         className={cn(
-          "max-h-fit min-w-fit rounded-xl border border-[#B7E08A] bg-transparent px-3 py-[6px] text-sm font-medium text-[#111111] lg:border-[#111111] lg:text-lg lg:font-semibold",
+          "max-h-fit min-w-fit rounded-xl border border-[#B7E08A] bg-transparent px-3 py-[6px] text-sm font-medium text-[#111111] transition-all hover:border-app-primary hover:!bg-app-primary lg:border-[#111111] lg:text-lg lg:font-semibold",
           plusJakartaSans.className,
           buttonClassName,
         )}

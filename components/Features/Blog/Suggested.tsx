@@ -17,9 +17,13 @@ const Suggested: React.FC<Props> = ({ items, className }) => {
       <h6 className="text-[#7F879E] lg:mr-1">Suggested:</h6>
       <ul className="flex gap-x-4 text-[#3860E2]">
         {items.map((item) => (
-          <li key={item}>{item}</li>
+          <li className="cursor-pointer hover:text-app-primary" key={item}>
+            {item}
+          </li>
         ))}
-        <li className="hidden lg:block">Success Story</li>
+        <li className="hidden cursor-pointer hover:text-app-primary lg:block">
+          Success Story
+        </li>
       </ul>
     </div>
   );
