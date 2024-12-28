@@ -1,16 +1,24 @@
 "use client";
+import { cn } from "@/app/_lib/clsx";
 import Image from "next/image";
 import React, { useState } from "react";
 interface QuestionProps {
   title: string;
   body?: string;
+  titleClassName?: string;
 }
 function Question(props: QuestionProps) {
   const [isOpen, setIsOpen] = useState<boolean>(true);
+  console.log("props", props);
   return (
     <div className="flex w-full flex-col gap-[10px] rounded-[18px] border-2 border-[#F9F9F9] p-5 text-start">
       <div className="flex w-full items-center justify-between">
-        <h5 className="w-[237px] text-[14px] font-bold capitalize leading-[18px]">
+        <h5
+          className={cn(
+            "w-[237px] text-[14px] font-bold capitalize leading-[18px]",
+            props.titleClassName,
+          )}
+        >
           {props.title}
         </h5>
         <button
@@ -23,12 +31,10 @@ function Question(props: QuestionProps) {
             className="cursor-pointer"
             width={20}
             height={20}
-            placeholder="blur"
-            blurDataURL="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zY3JlZW5zY2FwZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3JlZW5zY2FwZSIgdmlld0JveD0iMCAwIDAgMCI+PHBhdGggZD0iTTEyIDBIMFoiLz48L3N2Zz4="
           />
         </button>
       </div>
-      {props?.body && (
+      {!!props?.body && (
         <div
           className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"}`}
         >

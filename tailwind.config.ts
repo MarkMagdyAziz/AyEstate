@@ -38,6 +38,7 @@ const config: Config = {
           lgrey: "var(--app-lgrey)",
           lgrey2: "var(--app-lgrey2)",
           lgrey3: "var(--app-lgrey3)",
+          "grey-text": "var(--app-grey-text)",
           red: "var(--app-red)",
         },
       },

@@ -19,3 +19,8 @@ export interface IBlog {
   title: string;
   paragraph: string;
 }
+export interface IFaqCard {
+  icon: string;
+  title: string;
+  paragraph: string;
+}

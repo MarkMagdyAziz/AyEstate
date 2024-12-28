@@ -15,7 +15,7 @@ const playPoll = Playball({
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/departments", label: "Listings" },
-  { href: "#", label: "Company" },
+  { href: "/faqs", label: "Company" },
   { href: "/blog", label: "Blog" },
   { href: "/about-us", label: "About Us" },
 ];
