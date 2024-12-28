@@ -12,6 +12,10 @@ const SearchInput = dynamic(() => import("@/components/shared/SearchInput"));
 const BlogSmallCard = dynamic(
   () => import("@/components/Features/Blog/BlogSmallCard"),
 );
+
+export const metadata = {
+  title: "Blogs Page",
+};
 const BlogViewArticles = dynamic(
   () => import("@/components/Features/Blog/BlogViewArticles"),
 );

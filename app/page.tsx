@@ -30,7 +30,12 @@ export default function Home() {
 
       <Transition>
         <Testimonials />
-        <Questions />
+        <Questions
+          showFAQ={true}
+          title={"Frequently Asked" + <br className="lg:hidden" /> + "Question"}
+          subTitle="Did you find the question as you expected?"
+          firstQuestionBody="Et lectus viverra aenean malesuada praesent. Egestas praesent quam auctor amet ac, ac vel. Euismod proin massa feugiat gravida tellus auctor ac, vitae justo."
+        />
       </Transition>
 
       <Transition>
