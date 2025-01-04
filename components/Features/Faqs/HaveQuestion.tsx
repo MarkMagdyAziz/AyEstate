@@ -24,7 +24,7 @@ const cardsData = [
 ];
 async function HaveQuestion() {
   return (
-    <div className="mt-[50px] flex flex-col flex-wrap gap-y-5 md:flex-row lg:flex-row lg:flex-nowrap lg:gap-x-[20px] lg:gap-y-0">
+    <div className="mt-[50px] flex flex-col flex-wrap gap-y-5 md:flex-row lg:flex-row lg:flex-nowrap lg:justify-center lg:gap-x-[20px] lg:gap-y-0">
       {cardsData.map((cardContent) => {
         return (
           <CardIcon key={cardContent.contact}>
