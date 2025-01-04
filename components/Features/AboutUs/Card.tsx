@@ -35,7 +35,7 @@ const Card: React.FC<CardProps> = ({ image, name, title }) => {
       <ul className="mt-7 hidden w-full items-center justify-center gap-x-4 lg:flex">
         <li>
           <Image
-            src="/LinkedIn.svg"
+            src="icons/LinkedIn.svg"
             alt="linkedIn icon"
             width={24}
             height={24}
@@ -44,11 +44,11 @@ const Card: React.FC<CardProps> = ({ image, name, title }) => {
           />
         </li>
         <li>
-          <Image src="/X.svg" alt="X icon" width={24} height={24} />
+          <Image src="icons/X.svg" alt="X icon" width={24} height={24} />
         </li>
         <li>
           <Image
-            src="/Dribble.svg"
+            src="icons/Dribble.svg"
             alt="Dribble icon"
             width={24}
             height={24}

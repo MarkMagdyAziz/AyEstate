@@ -19,7 +19,7 @@ function StartProject() {
           Start A Project
           <Image
             alt="arrow icon"
-            src={"/arrow-up-right.svg"}
+            src={"icons/arrow-up-right.svg"}
             height={0}
             width={0}
             className="h-4 w-4"

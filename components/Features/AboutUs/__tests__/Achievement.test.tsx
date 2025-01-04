@@ -63,11 +63,11 @@ describe("AboutUs Achievement Component", () => {
     render(<Achievement />);
 
     const icons = [
-      "Facebook-Logo.wine.svg",
-      "Netflix-Logo.wine.svg",
-      "YouTube-Logo.wine.svg",
-      "Google-Logo.wine 1.svg",
-      "Amazon_(company)-Logo.wine.svg",
+      "icons/Facebook-Logo.wine.svg",
+      "icons/Netflix-Logo.wine.svg",
+      "icons/YouTube-Logo.wine.svg",
+      "icons/Google-Logo.wine 1.svg",
+      "icons/Amazon_(company)-Logo.wine.svg",
     ];
 
     icons.forEach((iconALt) => {

@@ -26,7 +26,7 @@ function ListingCard({ department }: Props) {
             width={0}
             height={0}
             className="h-3 w-3 lg:h-[14px] lg:w-4"
-            src="/heart.svg"
+            src="icons/heart.svg"
             alt="Heart icon"
             placeholder="blur"
             blurDataURL="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zY3JlZW5zY2FwZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3JlZW5zY2FwZSIgdmlld0JveD0iMCAwIDAgMCI+PHBhdGggZD0iTTEyIDBIMFoiLz48L3N2Zz4="
@@ -48,7 +48,7 @@ function ListingCard({ department }: Props) {
           <Image
             width={20}
             height={20}
-            src="/Frame (1).svg"
+            src="icons/Frame (1).svg"
             alt="Heart icon"
             placeholder="blur"
             blurDataURL="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zY3JlZW5zY2FwZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3JlZW5zY2FwZSIgdmlld0JveD0iMCAwIDAgMCI+PHBhdGggZD0iTTEyIDBIMFoiLz48L3N2Zz4="
@@ -59,7 +59,7 @@ function ListingCard({ department }: Props) {
           <Image
             width={20}
             height={20}
-            src="/Frame (2).svg"
+            src="icons/Frame (2).svg"
             alt="Heart icon"
             placeholder="blur"
             blurDataURL="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zY3JlZW5zY2FwZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3JlZW5zY2FwZSIgdmlld0JveD0iMCAwIDAgMCI+PHBhdGggZD0iTTEyIDBIMFoiLz48L3N2Zz4="
@@ -70,7 +70,7 @@ function ListingCard({ department }: Props) {
           <Image
             width={20}
             height={20}
-            src="/Frame (3).svg"
+            src="icons/Frame (3).svg"
             alt="Heart icon"
             placeholder="blur"
             blurDataURL="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zY3JlZW5zY2FwZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3JlZW5zY2FwZSIgdmlld0JveD0iMCAwIDAgMCI+PHBhdGggZD0iTTEyIDBIMFoiLz48L3N2Zz4="
@@ -81,7 +81,7 @@ function ListingCard({ department }: Props) {
           <Image
             width={20}
             height={20}
-            src="/Frame (4).svg"
+            src="icons/Frame (4).svg"
             alt="Heart icon"
             placeholder="blur"
             blurDataURL="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zY3JlZW5zY2FwZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3JlZW5zY2FwZSIgdmlld0JveD0iMCAwIDAgMCI+PHBhdGggZD0iTTEyIDBIMFoiLz48L3N2Zz4="
@@ -92,7 +92,7 @@ function ListingCard({ department }: Props) {
           <Image
             width={20}
             height={20}
-            src="/Frame (1).svg"
+            src="icons/Frame (1).svg"
             alt="Heart icon"
             placeholder="blur"
             blurDataURL="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zY3JlZW5zY2FwZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3JlZW5zY2FwZSIgdmlld0JveD0iMCAwIDAgMCI+PHBhdGggZD0iTTEyIDBIMFoiLz48L3N2Zz4="

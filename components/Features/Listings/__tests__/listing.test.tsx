@@ -26,7 +26,7 @@ describe("Listings FiltersSectionWrapper Component", () => {
     );
     const arrowIcon = screen.getByAltText("arrow down icon");
     expect(arrowIcon).toBeInTheDocument();
-    expect(arrowIcon).toHaveAttribute("src", "/arrow-up.svg");
+    expect(arrowIcon).toHaveAttribute("src", "icons/arrow-up.svg");
   });
 
   it("toggles the section open and closed", () => {

@@ -26,7 +26,7 @@ function Question(props: QuestionProps) {
           className="h-fit w-fit transform transition-transform duration-300"
         >
           <Image
-            src={props.body && isOpen ? "/minus.svg" : "/add.svg"}
+            src={props.body && isOpen ? "icons/minus.svg" : "icons/add.svg"}
             alt="minus icon"
             className="cursor-pointer"
             width={20}

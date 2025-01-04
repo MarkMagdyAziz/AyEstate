@@ -14,7 +14,7 @@ function CustomNumber() {
           <Image
             width={12}
             height={12}
-            src="/arrow-down.svg"
+            src="icons/arrow-down.svg"
             alt="arrow down icon"
           />
         </button>

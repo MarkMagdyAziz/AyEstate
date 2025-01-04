@@ -13,7 +13,7 @@ const AchievementFeature: React.FC<AchievementFeatureProps> = ({
     <>
       <div>
         <Image
-          src="/medal-star.svg"
+          src="icons/medal-star.svg"
           alt="Dribble icon"
           width={36}
           height={36}

@@ -24,3 +24,7 @@ export interface IFaqCard {
   title: string;
   paragraph: string;
 }
+
+export interface IContactCard extends IFaqCard {
+  subTitle: string;
+}

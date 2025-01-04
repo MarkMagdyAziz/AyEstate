@@ -19,7 +19,7 @@ export const FiltersSectionWrapper: React.FC<{
           <Image
             width={12}
             height={12}
-            src="/arrow-up.svg"
+            src="icons/arrow-up.svg"
             alt="arrow down icon"
             placeholder="blur"
             blurDataURL="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zY3JlZW5zY2FwZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3JlZW5zY2FwZSIgdmlld0JveD0iMCAwIDAgMCI+PHBhdGggZD0iTTEyIDBIMFoiLz48L3N2Zz4="
