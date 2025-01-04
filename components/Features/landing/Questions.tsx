@@ -27,7 +27,7 @@ const Questions: React.FC<Props> = ({
         <h2 className="mb-4 text-2xl font-bold lg:mb-[30px] lg:text-[44px] lg:leading-[57px]">
           {title}
         </h2>
-        <p className="mb-6 text-[14px] leading-[22.4px] text-[#7F879E] lg:mb-[53px]">
+        <p className="mb-6 text-[14px] leading-[22.4px] text-[#7F879E] lg:mb-[53px] lg:text-lg">
           {subTitle}
         </p>
 

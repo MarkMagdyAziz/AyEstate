@@ -139,7 +139,7 @@ function DepartmentDetail(department: IDepartment) {
             <button className="flex items-center justify-center gap-2 text-base">
               Contact
               <Image
-                src="/chevron-right.svg"
+                src="icons/chevron-right.svg"
                 width={0}
                 height={0}
                 className="h-auto w-auto"

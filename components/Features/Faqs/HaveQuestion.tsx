@@ -7,24 +7,24 @@ import { cn } from "@/app/_lib/clsx";
 const plusJakartaSans = Plus_Jakarta_Sans({ subsets: ["latin"] });
 const cardsData = [
   {
-    icon: "/user-green.svg",
+    icon: "icons/user-green.svg",
     contact: "+(1) 2345 6789",
     paragraph: "Our 24/7 Customer Services",
   },
   {
-    icon: "/document-text-green.svg",
+    icon: "icons/document-text-green.svg",
     contact: "support@ayestate.com",
     paragraph: "Alternative way to get anwser faster.",
   },
   {
-    icon: "/global-green.svg",
+    icon: "icons/global-green.svg",
     contact: "Real Estate Management",
     paragraph: "Our community ready to help you",
   },
 ];
 async function HaveQuestion() {
   return (
-    <div className="mt-[50px] flex flex-col flex-wrap gap-y-5 md:flex-row lg:flex-row lg:flex-nowrap lg:gap-x-[20px] lg:gap-y-0">
+    <div className="mt-[50px] flex flex-col flex-wrap gap-y-5 md:flex-row lg:flex-row lg:flex-nowrap lg:justify-center lg:gap-x-[20px] lg:gap-y-0">
       {cardsData.map((cardContent) => {
         return (
           <CardIcon key={cardContent.contact}>

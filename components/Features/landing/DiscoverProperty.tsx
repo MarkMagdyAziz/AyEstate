@@ -25,21 +25,21 @@ function DiscoverProperty() {
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:gap-8 lg:grid-cols-3 lg:gap-12">
         <PropertyCard
           key={1}
-          iconPath="/card-property-icon.svg"
+          iconPath="icons/card-property-icon.svg"
           iconAlt="property icon"
           title="Property Buying and Selling"
           description="We provide expert guidance for buying and selling properties, ensuring a smooth and successful transaction."
         />
         <PropertyCard
           key={2}
-          iconPath="/card-property-icon.svg"
+          iconPath="icons/card-property-icon.svg"
           iconAlt="property icon"
           title="Property Valuation Services"
           description="Our team of certified appraisers offers accurate property valuations to help you make informed decisions."
         />
         <PropertyCard
           key={3}
-          iconPath="/card-property-icon.svg"
+          iconPath="icons/card-property-icon.svg"
           iconAlt="property icon"
           title="Real Estate Investment Advice"
           description="Get expert advice on real estate investment strategies to maximize your returns."
@@ -50,7 +50,7 @@ function DiscoverProperty() {
         <button className="flex items-center justify-center gap-2 text-[16px] leading-6">
           Contact
           <Image
-            src="/chevron-right.svg"
+            src="icons/chevron-right.svg"
             width={0}
             height={0}
             className="h-auto w-auto"

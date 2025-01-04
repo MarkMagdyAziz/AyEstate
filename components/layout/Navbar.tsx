@@ -36,7 +36,7 @@ function Navbar() {
         className="lg:hidden"
         width={24}
         height={24}
-        src="/menu.svg"
+        src="icons/menu.svg"
         alt="menu icon"
         placeholder="blur"
         blurDataURL="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zY3JlZW5zY2FwZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3JlZW5zY2FwZSIgdmlld0JveD0iMCAwIDAgMCI+PHBhdGggZD0iTTEyIDBIMFoiLz48L3N2Zz4="
@@ -74,7 +74,7 @@ function Navbar() {
         transition={{ duration: 0.3, delay: navLinks.length * 0.1 }}
         className="hidden lg:block"
       >
-        <MainButton title="Contact Us" />
+        <MainButton title="Contact Us" href="/contact-us" />
       </motion.div>
     </motion.nav>
   );

@@ -35,7 +35,7 @@ function Faqs() {
       </Transition>
       <Transition>
         <div className="flex flex-col items-center text-center">
-          <h3 className="text-2xl font-bold lg:text-[44px] lg:leading-[58px]">
+          <h3 className="text-2xl font-bold capitalize lg:text-[44px] lg:leading-[58px]">
             Still Have a question?
           </h3>
           <p className="mt-4 px-5 text-sm leading-[22px] text-app-grey-text lg:mt-[30px] lg:w-[730px] lg:text-lg">

@@ -13,7 +13,7 @@ function Testimonials() {
             return (
               <Image
                 key={s}
-                src="/star.svg"
+                src="icons/star.svg"
                 width={0}
                 height={0}
                 priority
@@ -31,7 +31,7 @@ function Testimonials() {
         </p>
         <div className="flex flex-col items-center justify-center lg:mt-9 lg:flex-row lg:items-end lg:gap-5">
           <Image
-            src="/Avatar.svg"
+            src="/icons/Avatar.svg"
             width={56}
             height={56}
             priority

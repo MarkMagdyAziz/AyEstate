@@ -20,7 +20,7 @@ function Breadcrumb({ items }: Props) {
             {!lastItem && (
               <Image
                 alt="right arrow icon"
-                src={"/arrow-right.svg"}
+                src="icons/arrow-right.svg"
                 height={0}
                 width={0}
                 className="h-3 w-3"

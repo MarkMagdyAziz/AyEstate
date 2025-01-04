@@ -16,7 +16,7 @@ const SearchInput: React.FC<Props> = ({ placeholder, className }) => {
         placeholder={placeholder}
       />
       <Image
-        src="/search-normal.svg"
+        src="icons/search-normal.svg"
         className="relative left-3 top-[-28px] -translate-y-1/2"
         alt="search icon"
         width={18}

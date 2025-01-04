@@ -3,11 +3,11 @@ import AchievementFeature from "./AchievementFeature";
 import Image from "next/image";
 
 const ICONS = [
-  "Facebook-Logo.wine.svg",
-  "Netflix-Logo.wine.svg",
-  "YouTube-Logo.wine.svg",
-  "Google-Logo.wine 1.svg",
-  "Amazon_(company)-Logo.wine.svg",
+  "icons/Facebook-Logo.wine.svg",
+  "icons/Netflix-Logo.wine.svg",
+  "icons/YouTube-Logo.wine.svg",
+  "icons/Google-Logo.wine 1.svg",
+  "icons/Amazon_(company)-Logo.wine.svg",
 ];
 function Achievement() {
   return (
@@ -34,7 +34,7 @@ function Achievement() {
         <button className="flex w-full items-center justify-center gap-x-[10px] rounded-[40px] border border-[#F4F2FF] bg-transparent px-6 py-3 text-sm font-semibold lg:w-fit lg:py-[14px]">
           View All Project{" "}
           <Image
-            src="/arrow-up-right-white.svg"
+            src="icons/arrow-up-right-white.svg"
             alt="Dribble icon"
             width={16}
             height={16}
