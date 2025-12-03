@@ -12,6 +12,24 @@ pipeline {
     }
 
     stages {
+        stage('Install Dependencies') {
+            steps {
+                sh 'npm ci'
+            }
+        }
+
+        stage('Lint') {
+            steps {
+                sh 'npm run lint'
+            }
+        }
+
+        stage('Run Tests') {
+            steps {
+                sh 'npm test -- --watchAll=false --passWithNoTests'
+            }
+        }
+
         stage('Install Vercel CLI') {
             steps {
                 sh 'npm install -g vercel'
