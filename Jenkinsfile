@@ -1,14 +1,14 @@
 pipeline {
-    agent {
-        docker {
-            nodejs 'nodejs-20'
-        }
+    agent any
+
+    tools {
+        nodejs 'nodejs-20'
     }
 
     environment {
         VERCEL_TOKEN = credentials('vercel-token')
-        VERCEL_ORG_ID = credentials('vercel-org-id')
-        VERCEL_PROJECT_ID = credentials('vercel-project-id')
+        VERCEL_ORG_ID = credentials('orgId')
+        VERCEL_PROJECT_ID = credentials('projectId')
     }
 
     stages {
