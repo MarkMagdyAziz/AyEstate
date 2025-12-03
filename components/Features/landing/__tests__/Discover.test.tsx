@@ -1,6 +1,15 @@
 import { render, screen } from "@testing-library/react";
 import DiscoverHome from "../DiscoverHome";
 
+// Mock Next.js App Router
+jest.mock("next/navigation", () => ({
+  useRouter: () => ({
+    push: jest.fn(),
+    replace: jest.fn(),
+    prefetch: jest.fn(),
+  }),
+}));
+
 // Mock Firebase Firestore
 jest.mock("firebase/firestore", () => ({
   getDocs: jest.fn(),

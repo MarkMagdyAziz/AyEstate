@@ -4,6 +4,15 @@ import DepartmentDetail from "..";
 import { IDepartment } from "@/app/_core/interfaces/common";
 import React from "react";
 
+// Mock Next.js App Router
+jest.mock("next/navigation", () => ({
+  useRouter: () => ({
+    push: jest.fn(),
+    replace: jest.fn(),
+    prefetch: jest.fn(),
+  }),
+}));
+
 describe("DepartmentDetail Component", () => {
   const mockDepartment: IDepartment = {
     title: "Luxury Beachfront Villa",
