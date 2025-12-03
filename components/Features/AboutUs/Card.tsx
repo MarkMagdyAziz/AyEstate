@@ -6,14 +6,14 @@ interface CardProps {
   title: string;
   name: string;
 }
-const Card: React.FC<CardProps> = ({ image, name, title }) => {
+const Card: React.FC<CardProps> = ({ name, title }) => {
   return (
     <div className="flex flex-col lg:w-[304px] lg:justify-center lg:text-center">
       <div
         className={`relative mx-auto min-h-[260px] w-full lg:size-20 lg:min-h-20 lg:rounded-[50%]`}
       >
         <Image
-          src={image}
+          src="https://s3-alpha-sig.figma.com/img/29c7/3f4c/85a7b06709b9438e0628282894f0c85b?Expires=1741564800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Oq9tbVztXhIQAPZ~1NlYlufS0VS97ui150Yhjv2G~xUIxdyoqFz3b1Hg0qGjeKrX7o2bN-PM0WepEPtlAoeikd-EpAPB3e67v6hjMnALmsGOxPF~G~qRuWBiIN6N093WBASmUpfVLGtSGTxSVy0a0VM3O0-mPr1Z5xtpej3P1qWkWCjydeBlsv~fLl0gHHuDcO0azvkWBjfZV4U034V3U3mXCPzBJ3SBXxLEMNlbA4J7f5CzQjWnjxKgTiqEukQfAJQfpF3iJr4~M0pll0S2vYnZwoHRarD8Bvw-KfOKlKUy7IC3KGzxg4gQ~WU7hb9VSsHOJOb1ohbkMBVSGe2vow__"
           alt={title}
           fill
           className="rounded-xl object-cover lg:rounded-[50%]" // Updated to use CSS class
