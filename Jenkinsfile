@@ -1,5 +1,10 @@
 pipeline {
-    agent any
+    agent {
+        docker {
+            image 'node:20-alpine'
+            args '-u root'
+        }
+    }
 
     environment {
         VERCEL_TOKEN = credentials('vercel-token')
@@ -8,12 +13,6 @@ pipeline {
     }
 
     stages {
-        stage('Checkout') {
-            steps {
-                git branch: 'main', url: 'https://github.com/MarkMagdyAziz/AyEstate.git'
-            }
-        }
-
         stage('Install Vercel CLI') {
             steps {
                 sh 'npm install -g vercel'
@@ -39,4 +38,3 @@ pipeline {
         }
     }
 }
-
